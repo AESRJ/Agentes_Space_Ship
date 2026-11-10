@@ -36,8 +36,19 @@ if (-not (Get-Command git -ErrorAction SilentlyContinue)) { Install-Dependency '
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
     throw 'Git was installed but is not visible yet. Open a new PowerShell and rerun.'
 }
-if (-not (Get-Command py -ErrorAction SilentlyContinue) -and -not (Get-Command python -ErrorAction SilentlyContinue)) {
-    Install-Dependency 'Python.Python.3.12'
+function Find-Python {
+    foreach ($Candidate in @('py','python')) {
+        $Command = Get-Command $Candidate -ErrorAction SilentlyContinue
+        if (-not $Command) { continue }
+        # The Microsoft Store alias is not a working Python installation.
+        if ($Command.Source -match 'WindowsApps') { continue }
+        $CandidateArgs = if ($Candidate -eq 'py') { @('-3') } else { @() }
+        try {
+            & $Candidate @CandidateArgs -c 'import sys; sys.exit(0 if sys.version_info >= (3,11) else 1)' 2>$null | Out-Null
+            if ($LASTEXITCODE -eq 0) { return $Candidate }
+        } catch { continue }
+    }
+    return $null
 }
 
 # HTTPS uses Git Credential Manager; SSH reuses a key already configured by the user.
@@ -64,7 +75,12 @@ if ($GitEmail) { Invoke-Checked 'git' @('-C',$Repo,'config','--local','user.emai
 $Venv = Join-Path $Repo '.venv'
 $Python = Join-Path $Venv 'Scripts\python.exe'
 if (-not (Test-Path $Python)) {
-    $Launcher = if (Get-Command py -ErrorAction SilentlyContinue) { 'py' } else { 'python' }
+    $Launcher = Find-Python
+    if (-not $Launcher) {
+        Install-Dependency 'Python.Python.3.12'
+        $Launcher = Find-Python
+    }
+    if (-not $Launcher) { throw 'Python 3.11+ is not visible yet. Open a new PowerShell and rerun.' }
     $Prefix = if ($Launcher -eq 'py') { @('-3') } else { @() }
     Invoke-Checked $Launcher ($Prefix + @('-c','import sys; assert sys.version_info >= (3,11), "Python 3.11+ required"'))
     Invoke-Checked $Launcher ($Prefix + @('-m','venv',$Venv))
