@@ -1,0 +1,4 @@
+# Versiones de la instalación local validada; dependencias transitivas resueltas por pip.
+mcp[cli]==1.30.0
+notebooklm-py[browser]==0.8.6
+filelock>=3.20,<4

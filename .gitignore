@@ -1,0 +1,14 @@
+.venv/
+.memory/
+.codex/config.toml
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+storage_state.json
+*cookies*.json
+browser_profile/
+.notebooklm/
+dist/
+*.zip
