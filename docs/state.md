@@ -10,7 +10,7 @@ Proyecto en exploración: cooperación astronauta/torre de control, puzzles dura
 
 Repositorio destino autorizado: `AESRJ/Agentes_Space_Ship`. Se creó el cuaderno [Space Ship — Memoria de creación](https://notebooklm.google.com/notebook/62c97db5-1c82-41bd-a443-2f1f98675ada).
 
-Se prepararon seis perfiles Codex, instrucciones comunes, skill de memoria, adaptador MCP basado en knowingdoing, instalador PowerShell, pruebas de herramientas y exportador de contexto. La evidencia de validación y publicación se registra en `docs/sessions/`; la presencia de un script no demuestra su ejecución en todos los equipos.
+Se publicaron seis perfiles Codex, instrucciones comunes, skill de memoria, adaptador MCP basado en knowingdoing, instalador PowerShell, pruebas de herramientas y exportador de contexto. Se verificaron consultas y escritura de checkpoints reales por MCP. La primera ejecución CI pasó en Linux y Windows. Véase [evidencia y límites](verification.md) y los registros de `docs/sessions/`; la presencia de un script no demuestra el login interactivo en todos los equipos.
 
 ## Pendientes del equipo
 

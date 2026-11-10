@@ -66,7 +66,8 @@ class MemoryTests(unittest.TestCase):
             if args[:2] == ('source', 'list'):
                 return {'sources': [source] if source['title'] else []}
             if args[:2] == ('source', 'add'):
-                source['title'] = args[args.index('--title') + 1]
+                # Real NotebookLM file upload can ignore the requested title.
+                source['title'] = Path(args[2]).name
                 return {'source': source}
             if args[:2] == ('source', 'wait'):
                 return {'status': 'ready'}
@@ -76,6 +77,15 @@ class MemoryTests(unittest.TestCase):
             second = memory.upload_text('same content', 'REGISTRO', self.root)
         self.assertEqual(first['source_id'], second['source_id'])
         self.assertEqual(sum(c[:2] == ('source', 'add') for c in calls), 1)
+
+    def test_reuses_legacy_filename_source(self):
+        import hashlib
+        digest = hashlib.sha256(b'abc').hexdigest()
+        with patch.object(memory, 'cli', side_effect=[{'sources': [
+                {'id': 'legacy', 'title': digest + '.txt'}]}, {'status': 'ready'}]) as mocked:
+            receipt = memory.upload_text('abc', 'CONTEXTO', self.root)
+        self.assertEqual(receipt['source_id'], 'legacy')
+        self.assertFalse(any(c.args[:2] == ('source', 'add') for c in mocked.call_args_list))
 
     def test_processing_timeout_is_not_success(self):
         with patch.object(memory, 'cli', side_effect=[{'sources': []}, {'source': {'id': 's'}}, RuntimeError('timeout')]):

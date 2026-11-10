@@ -96,13 +96,16 @@ def upload_text(content, kind, root=ROOT):
         sources = listing.get('sources')
         if not isinstance(sources, list):
             raise RuntimeError('Formato de lista de fuentes desconocido.')
-        matches = [s for s in sources if s.get('title') == title]
+        # File ingestion may keep the filename instead of honoring --title.
+        # Accept both and the legacy digest filename produced by the first version.
+        aliases = {title, f'{title}.txt', f'{digest}.txt'}
+        matches = [s for s in sources if s.get('title') in aliases]
         if len(matches) > 1:
             raise RuntimeError('Hay fuentes duplicadas; revisar con el integrador sin borrar automáticamente.')
         source_id = matches[0].get('id') if matches else None
         if not source_id:
             # Temporary UTF-8 file keeps large content out of Windows argv limits.
-            payload = local / f'{digest}.txt'
+            payload = local / f'{title}.txt'
             payload.write_text(content, encoding='utf-8')
             added = cli('source', 'add', str(payload), '-n', notebook,
                         '--type', 'file', '--title', title, '--json')
