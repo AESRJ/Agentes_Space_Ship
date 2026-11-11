@@ -1,5 +1,9 @@
 # Contexto y visión provisional
 
+## Actualización posterior de la misma fecha
+
+El usuario aporta «Órbita: contacto con Tierra» como nombre provisional y propone construir, ensayar, lanzar, operar y evaluar consecuencias. Solicita planear con Unity y C#, y confirma dos PC por Internet. Véase [el plan de trabajo](plan-unity.md). Esto sustituye las menciones posteriores a motor, lenguaje y conexión sin decidir. El alcance detallado y la arquitectura siguen propuestos.
+
 Actualizado: 2026-11-10. Estado: exploración; no es una especificación aprobada.
 
 ## Fuentes y autoridad

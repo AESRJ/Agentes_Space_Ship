@@ -2,6 +2,10 @@
 
 Actualizado: 2026-11-10.
 
+## Nueva planificación
+
+El usuario elige Unity y C# y dos PC conectados por Internet. Se preparó [un plan por hitos](plan-unity.md), pendiente de implementación y validación. Estas decisiones sustituyen las afirmaciones históricas siguientes sobre motor y conexión abiertos. El repositorio del juego todavía no está acordado. Próximo paso propuesto: conexión remota y prototipo orbital breve antes de la misión completa.
+
 ## Dirección
 
 Proyecto en exploración: cooperación astronauta/torre de control, puzzles durante el lanzamiento y aprendizaje sobre decisiones de misión. No hay motor, MVP o arquitectura del videojuego aprobados. Ver [visión](vision.md) y [alcance](scope.md).
