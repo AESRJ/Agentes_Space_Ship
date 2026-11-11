@@ -14,7 +14,7 @@ Se publicaron seis perfiles Codex, instrucciones comunes, skill de memoria, adap
 
 ## Pendientes del equipo
 
-- Compartir el cuaderno y el repositorio con las cuentas de los seis integrantes. No se han recibido sus identidades.
+- Se recibió la identidad de un compañero: invitación GitHub creada con escritura y acceso NotebookLM concedido como editor. Falta aceptar la invitación GitHub y probar su incorporación. Recibir las identidades restantes para completar los accesos del equipo; los permisos se consultan en los servicios, sin duplicar correos personales en los documentos.
 - Ejecutar la incorporación interactiva en un equipo Windows y confirmar login/permisos.
 - Acordar roles jugables, primer recorrido, público y modalidad de conexión.
 - Investigar un fenómeno y definir un primer puzzle con fuentes.
