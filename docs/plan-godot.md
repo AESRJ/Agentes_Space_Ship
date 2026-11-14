@@ -1,22 +1,19 @@
-# Launch Control — plan vigente y reparto en Godot
+# Launch Control — plan vigente y arranque del equipo
 
-Actualizado: 2026-11-14. Encargo: Jorge. Estado: planificación del prototipo, sin implementación del videojuego. Publicado e integrado en main mediante [PR #6](https://github.com/AESRJ/Agentes_Space_Ship/pull/6); CI Linux/Windows y atribución aprobados.
+Actualizado: 2026-11-14. Jorge solicita terminar la base con Claude para liberar el trabajo. Sojo no está incorporado por ahora; el reparto anterior entre seis queda como historia. [ADR-0004](decisions/0004-cinco-activos-y-arranque.md) registra la instrucción.
 
-El plan vigente está en [specs/001-launch-control-godot](../specs/001-launch-control-godot/spec.md), generado con Specify → Plan → Tasks. Sustituye Unity para este prototipo y excluye la metodología de `Etapa_1_final.md`. La decisión y sus límites constan en [ADR-0003](decisions/0003-launch-control-godot-speckit.md).
+Juego privado: https://github.com/AESRJ/LaunchControlGodot. La base tiene PR #1 y validación Linux/Windows; su guía docs/setup/team-readiness.md es la referencia de publicación y arranque. El repositorio de agentes conserva decisiones y memoria; el código se escribe en el juego.
 
-| Integrante | Área inicial | Tareas |
+| Integrante activo | Área | Tareas |
 | --- | --- | --- |
-| Jorge | Repositorio, base y composición/integración | T001, T002, T012, T018, T024, T031, T038 |
-| Gael | Cabina/torre 3D, antena visual y desenlaces; prueba externa acompañada | T004, T015, T020, T021, T033, T034, T039 |
-| Adrian | Red, roles, reloj, estado y validación autoritativa | T007, T008, T009, T013, T017, T030, T035 |
-| Kevin | Reglas y recursos de módulos, código numérico y reinicio | T005, T010, T014, T026, T027, T036, T041 |
-| Isra | Manual, laptop, HUD, calculadora y guía de demo | T006, T016, T022, T023, T028, T029, T042 |
-| Sojo | Harness, validación de cortes y evidencia final | T003, T011, T019, T025, T032, T037, T040 |
+| Jorge | Base, composición e integración; validación inicial y aceptación | T001, T002, T003, T012, T018, T024, T031, T038, T040 |
+| Gael | Escenarios 3D, animaciones y verificación visual | T004, T015, T020, T021, T025, T033, T034, T037, T039 |
+| Adrian | Red, roles, reloj, estado y verificación del contrato | T007, T008, T009, T011, T013, T017, T030, T035 |
+| Kevin | Reglas/módulos y verificación de antena | T005, T010, T014, T019, T026, T027, T036, T041 |
+| Isra | Manual, interfaz, calculadora y verificación de dificultad | T006, T016, T022, T023, T028, T029, T032, T042 |
 
-Son siete tareas por persona, no una estimación de horas. El [reparto completo](../specs/001-launch-control-godot/assignments.md) indica cómo iniciar y trabajar con IA; [tasks.md](../specs/001-launch-control-godot/tasks.md) es la única lista ejecutable con dependencias, rutas y aceptación. `GAME/` representa el repositorio futuro del juego, no un proyecto existente aquí. No se crean tickets ni se contacta a integrantes.
+Se mantienen los 42 IDs: 9/9/8/8/8 tareas, sin afirmar igualdad de horas ni experiencia. [Reparto](../specs/001-launch-control-godot/assignments.md) y [tareas](../specs/001-launch-control-godot/tasks.md) contienen el detalle. Al liberar técnicamente la base arrancan Jorge T003, Gael T004, Adrian T007, Kevin T005 e Isra T006. La verificación personal del PC Windows es un seguimiento, no una prueba ya realizada ni un bloqueo general.
 
-Primer corte: elegir roles, dos puestos provisionales, antena, manual, tiempo y resultado compartido (hasta T019). Prototipo completo: puestos 3D, manual/herramienta, dos dificultades, presentaciones y comprobación externa (hasta T042). La segunda dificultad propone un módulo numérico original para que haya más componentes; no se implementa todo el catálogo de las capturas.
+El primer corte sigue siendo antena, manual, reloj y resultado compartido; la ampliación propone módulo numérico y herramienta. Las capturas son referencias y no assets del ejecutable. Godot es la elección vigente; valores como 180 segundos son propuestas. No se ha probado el gameplay ni Internet entre dos PCs.
 
-Las propuestas iniciales son Godot 4.7.2/GDScript, host ENet autoritativo, voz externa y 180 segundos. La decisión de Godot y el uso de Spec Kit sí fueron explícitos; los detalles son diseño a validar. Dos procesos locales no demuestran Internet. Las pruebas de juego, resultados de usuarios, FPS y builds siguen pendientes. La constitución de producto no está ratificada.
-
-La memoria debe conservar el resumen de esta decisión y una instantánea del paquete Spec Kit, distinguiendo contenido local de una revisión integrada. El exportador histórico de `docs/` no incluye automáticamente `specs/`; el traspaso al juego debe copiar ese paquete expresamente.
+Las tareas posteriores de integración de Jorge requieren los componentes de otros dueños: no se implementan esas partes ajenas para marcar todo como terminado. La memoria conserva evidencia de base técnica, publicación y pendientes reales por separado.

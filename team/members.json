@@ -1,11 +1,42 @@
 {
   "schema_version": 1,
   "members": [
-    {"id": "gael", "name": "Gael", "github": null, "status": "active"},
-    {"id": "adrian", "name": "Adrian", "github": null, "status": "active"},
-    {"id": "kevin", "name": "Kevin", "github": "KVSO755", "status": "active"},
-    {"id": "isra", "name": "Isra", "github": null, "status": "active"},
-    {"id": "jorge", "name": "Jorge", "github": "AESRJ", "status": "active"},
-    {"id": "sojo", "name": "Sojo", "github": null, "status": "active"}
+    {
+      "id": "gael",
+      "name": "Gael",
+      "github": "GaelFlores04",
+      "status": "active"
+    },
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "github": "adrianbalderas373488",
+      "status": "active"
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin",
+      "github": "KVSO755",
+      "status": "active"
+    },
+    {
+      "id": "isra",
+      "name": "Isra",
+      "github": "issgg",
+      "status": "active"
+    },
+    {
+      "id": "jorge",
+      "name": "Jorge",
+      "github": "AESRJ",
+      "status": "active"
+    },
+    {
+      "id": "sojo",
+      "name": "Sojo",
+      "github": null,
+      "status": "pending",
+      "participation_note": "No incorporado por instrucción de Jorge, 2026-11-14; sin tareas activas."
+    }
   ]
 }

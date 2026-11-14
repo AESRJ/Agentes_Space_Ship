@@ -3,5 +3,5 @@
   "title": "Space Ship — Memoria de creación",
   "url": "https://notebooklm.google.com/notebook/62c97db5-1c82-41bd-a443-2f1f98675ada",
   "repository": "git@github.com:AESRJ/Agentes_Space_Ship.git",
-  "game_repository": null
+  "game_repository": "https://github.com/AESRJ/LaunchControlGodot"
 }

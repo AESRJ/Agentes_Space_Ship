@@ -2,36 +2,34 @@
 
 Actualizado: 2026-11-14.
 
-## Plan vigente — Launch Control en Godot
+## Equipo y destino vigentes
 
-Jorge solicita Spec Kit y Godot basándose en Etapa_1_final y las tres imágenes. Paquete en `specs/001-launch-control-godot/`: especificación, plan, contratos, validación y 42 tareas, siete por integrante. El reparto no supone especialidades. Ver [plan vigente](plan-godot.md) y [ADR-0003](decisions/0003-launch-control-godot-speckit.md). La antena es el primer corte; segundo módulo/calculadora y parámetros son propuestas. No se ha implementado ni probado el juego; primero identificar su repositorio en T001. Spec Kit y el paquete están publicados e integrados en `main` mediante [PR #6](https://github.com/AESRJ/Agentes_Space_Ship/pull/6), con CI Linux/Windows y atribución aprobados. Los integrantes pueden actualizar main y pedir sus tareas por nombre. Véase `docs/sessions/2026-11-14-jorge-plan-godot-publicado.md` para la evidencia.
+Activos: Jorge (`AESRJ`), Gael (`GaelFlores04`), Adrian (`adrianbalderas373488`), Kevin (`KVSO755`) e Isra (`issgg`). Escritura efectiva comprobada en el juego privado https://github.com/AESRJ/LaunchControlGodot. No hay invitaciones pendientes al consultar. Sojo no está incorporado por instrucción de Jorge, figura pending y no tiene tareas activas.
 
-## Planificación anterior de Unity — histórica
+El reparto mantiene 42 IDs: Jorge 9, Gael 9, Adrian 8, Kevin 8 e Isra 8. Sus antiguas tareas de Sojo se redistribuyeron sin eliminar QA. Ver [ADR-0004](decisions/0004-cinco-activos-y-arranque.md), [reparto](../specs/001-launch-control-godot/assignments.md) y [estado operativo](../specs/001-launch-control-godot/status.md).
 
-El usuario elige Unity y C# y dos PC conectados por Internet. Se preparó [un plan por hitos](plan-unity.md), pendiente de implementación y validación. Estas decisiones sustituyen las afirmaciones históricas siguientes sobre motor y conexión abiertos. El repositorio del juego todavía no está acordado. Próximo paso propuesto: conexión remota y prototipo orbital breve antes de la misión completa.
+## Base publicada y tareas liberadas
 
-## Dirección
+Claude integró PR #1 del juego con squash en `0ec8b6ac0fffa864f7549dd95f871efa96a12d58`. La base Godot 4.7.2 incluye proyecto/escena vacía, instaladores Linux/Windows con SHA-512, comprobadores, CI y guía `docs/setup/team-readiness.md`. Codex revisó los archivos y ejecutó el check Linux: importación, escena y configuración OK, salida 0. CI Linux/Windows de la cabecera fusionada aprobado en run 43646971560.
 
-Proyecto en exploración: cooperación astronauta/torre de control, puzzles durante el lanzamiento y aprendizaje sobre decisiones de misión. El motor vigente para el prototipo es Godot; los detalles propuestos y el estado de implementación constan en el plan vigente. Ver [visión](vision.md) y [alcance](scope.md).
+La base técnica y los permisos permiten iniciar Gael T004, Adrian T007, Kevin T005 e Isra T006. Jorge tiene T003 en revisión. Prueba GUI en el Windows personal de Jorge y comprobación en cada PC siguen pendientes; no se presentan como hechos ni bloquean el inicio de quienes ya tienen acceso. T001/T002 conservan sus criterios de aceptación y se distinguen del estado técnico publicado.
 
-## Infraestructura de trabajo
+## Última revisión de Claude
 
-Spec Kit oficial 1.4.0 incorporado al paquete: nueve skills Codex y runtime `.specify/`. Se ejecutó Specify → Plan → Tasks para Launch Control; la constitución instalada sigue como plantilla sin ratificar. La instalación inicial se preparó en `jorge/instalar-speckit` y se reúne con el plan en `jorge/launch-control-godot`. Consultar el registro `docs/sessions/2026-11-14-jorge-instalacion-speckit.md`.
+T003 añade harness, fixtures, un puesto simulado, captura y registro de métricas. Está en PR #2, cabecera revisada `105a1e7`, con CI aprobado. Codex reprodujo tres problemas y pidió corrección: registro no escrito devuelve éxito, frames inválido queda interactivo y headless con viewport 64×64 marca resolución 1280×720 como válida. [Informe de revisión](reviews/2026-11-14-claude-base-y-harness.md).
 
-Repositorio destino autorizado: `AESRJ/Agentes_Space_Ship`. Se creó el cuaderno [Space Ship — Memoria de creación](https://notebooklm.google.com/notebook/62c97db5-1c82-41bd-a443-2f1f98675ada).
+Claude recibió el encargo de corregir R1–R3 y publicar nuevas regresiones en ese PR. La fusión anterior del PR #2 fue denegada por su clasificador de permisos; no se elude por otra vía. Las integraciones posteriores de Jorge esperan tareas reales de los compañeros; nadie implementa trabajo ajeno para cerrar su lista.
 
-Se publicaron seis perfiles Codex, instrucciones comunes, skill de memoria, adaptador MCP basado en knowingdoing, instalador PowerShell, pruebas de herramientas y exportador de contexto. Se verificaron consultas y escritura de checkpoints reales por MCP. La primera ejecución CI pasó en Linux y Windows. Véase [evidencia y límites](verification.md) y los registros de `docs/sessions/`; la presencia de un script no demuestra el login interactivo en todos los equipos.
+## Plan y memoria
 
-## Pendientes del equipo
+El plan vigente es Launch Control en Godot con Spec Kit, a partir de Etapa_1_final y tres imágenes. Antena primero; segundo módulo numérico/calculadora y 180 s son propuestas. No hay una ronda jugable, red entre dos PC ni rendimiento real del juego verificado. Unity y los repartos anteriores se conservan como historia.
 
-- Identidad del equipo en `team/members.json`: Gael, Adrian, Kevin, Isra, Jorge y Sojo. Jorge confirmó su cuenta `AESRJ`. El primer paso de cada conversación es identificarse por nombre. Herramienta de sesión/commits etiquetados, atribución automática en checkpoints y flujo con IA documentados en `docs/team-workflow.md`. Implementado e integrado mediante [PR #3](https://github.com/AESRJ/Agentes_Space_Ship/pull/3), con atribución y CI Linux/Windows aprobados. Decisión sincronizada en NotebookLM (fuente `ece98b4e-ce5e-45bf-99eb-d991adeec8a6`); evidencias en `docs/sessions/2026-11-14-jorge-identidad-equipo.md` y el registro de publicación. Kevin confirmó su cuenta `KVSO755` (2026-11-14). Faltan las otras cuatro cuentas GitHub; no se modificaron reglas remotas.
-- Se recibió la identidad de un compañero: invitación GitHub creada con escritura y acceso NotebookLM concedido como editor. Falta aceptar la invitación GitHub y probar su incorporación. Recibir las identidades restantes para completar los accesos del equipo; los permisos se consultan en los servicios, sin duplicar correos personales en los documentos.
-- Ejecutar la incorporación interactiva en un equipo Windows y confirmar login/permisos.
-- Validar el primer corte Launch Control: roles astronauta/torre y dos PC por Internet; concretar público y comprobar las propuestas de dificultad/duración.
-- Investigar un fenómeno y definir un primer puzzle con fuentes.
-- Identificar la edición y URL oficial del reto para verificar criterios.
-- Elegir después el repositorio del videojuego y registrar el traspaso.
+Repositorio de agentes: AESRJ/Agentes_Space_Ship. Cuaderno fijado: 62c97db5-1c82-41bd-a443-2f1f98675ada. La URL real del juego y las cinco cuentas están en memory/notebook.json y team/members.json. Los checkpoints y sus recibos distinguen contenido local de revisión integrada; no se afirma sincronización solo por escribir un documento.
 
-## Distinciones
+## Pendientes
 
-Las ideas iniciales están preservadas en [visión](vision.md); la [propuesta inicial](propuesta-inicial.md) es histórica y sus frases de «todavía no instalado» describen ese momento anterior. Las decisiones aceptadas se registran en `docs/decisions/`. No se implementó el videojuego en esta entrega.
+- Correcciones y revisión nueva de T003; resolver la vía de aprobación de su fusión sin bypass.
+- Integrantes clonan main, ejecutan su comprobador y empiezan su primera tarea liberada.
+- Validar futuras entregas antes de T012/T018/T024/T031/T038/T040.
+- Confirmar público, parámetros de dificultad, fuentes de puzzles futuros y edición/criterios del reto.
+- Probar GUI Windows personal y, cuando exista la ronda, dos redes externas y métricas con puestos reales.

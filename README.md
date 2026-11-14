@@ -1,6 +1,6 @@
 # Agentes Space Ship
 
-Centro de agentes, investigación, diseño y memoria para seis integrantes. El videojuego se implementará después en otro repositorio. Aquí empezamos por nutrir y validar la idea.
+Centro de agentes, investigación, diseño y memoria para cinco integrantes activos. Sojo no está incorporado por ahora. El videojuego tiene su repositorio separado en https://github.com/AESRJ/LaunchControlGodot. Aquí empezamos por nutrir y validar la idea.
 
 ## Incorporación desde Windows
 
@@ -72,7 +72,7 @@ Git conserva versiones verificables; NotebookLM ayuda a recuperar contexto con r
 
 ## Prototipo Launch Control
 
-El [plan vigente en Godot](docs/plan-godot.md) aplica Spec Kit a Etapa_1_final y sus imágenes. Consulta el [reparto de los seis integrantes](specs/001-launch-control-godot/assignments.md) y las [42 tareas ejecutables](specs/001-launch-control-godot/tasks.md). Primero se entrega una ronda con antena; después los puestos 3D, dificultad, herramienta y desenlaces. El repositorio del juego se identifica en T001; aquí se conserva la planificación.
+El [plan vigente en Godot](docs/plan-godot.md) aplica Spec Kit a Etapa_1_final y sus imágenes. Consulta el [reparto de los cinco integrantes activos](specs/001-launch-control-godot/assignments.md) y las [42 tareas ejecutables](specs/001-launch-control-godot/tasks.md). Primero se entrega una ronda con antena; después los puestos 3D, dificultad, herramienta y desenlaces. El repositorio del juego es AESRJ/LaunchControlGodot; aquí se conserva la planificación.
 
 Para consultar tus tareas, actualiza tu copia desde `main` con el árbol limpio (`git switch main` y `git pull --ff-only`), abre esta carpeta en Codex y escribe:
 
@@ -89,7 +89,7 @@ En bash, usa `export SPECIFY_FEATURE_DIRECTORY=specs/001-launch-control-godot`. 
 
 ## Flujo del equipo
 
-Para identificarte, crear tu rama y etiquetar cada commit, sigue [identidad y metodología con IA](docs/team-workflow.md). El primer paso de cada conversación es decir tu nombre: Gael, Adrian, Kevin, Isra, Jorge o Sojo. La IA lo pregunta si falta; una sesión anterior no sustituye esta identificación. Los perfiles de agentes son compartidos y distintos de los integrantes humanos.
+Para identificarte, crear tu rama y etiquetar cada commit, sigue [identidad y metodología con IA](docs/team-workflow.md). El primer paso de cada conversación es decir tu nombre: Gael, Adrian, Kevin, Isra o Jorge. La IA lo pregunta si falta; una sesión anterior no sustituye esta identificación. Los perfiles de agentes son compartidos y distintos de los integrantes humanos.
 
 1. Actualizar main sin cambios locales y crear rama por tarea.
 2. Leer [visión](docs/vision.md), [alcance](docs/scope.md), [estado](docs/state.md) y consultar NotebookLM.
