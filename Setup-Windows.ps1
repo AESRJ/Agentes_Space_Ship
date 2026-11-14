@@ -42,9 +42,14 @@ function Find-Python {
         if (-not $Command) { continue }
         # The Microsoft Store alias is not a working Python installation.
         if ($Command.Source -match 'WindowsApps') { continue }
-        $CandidateArgs = if ($Candidate -eq 'py') { @('-3') } else { @() }
+        # Build one explicit array: in Windows PowerShell 5.1 an `if` expression unwraps
+        # @('-3') to a string, and splatting it before literal arguments loses '-c',
+        # which started an interactive interpreter and hid an installed Python.
+        $CheckArgs = @()
+        if ($Candidate -eq 'py') { $CheckArgs += '-3' }
+        $CheckArgs += @('-c','import sys; sys.exit(0 if sys.version_info >= (3,11) else 1)')
         try {
-            & $Candidate @CandidateArgs -c 'import sys; sys.exit(0 if sys.version_info >= (3,11) else 1)' 2>$null | Out-Null
+            & $Candidate @CheckArgs 2>$null | Out-Null
             if ($LASTEXITCODE -eq 0) { return $Candidate }
         } catch { continue }
     }
