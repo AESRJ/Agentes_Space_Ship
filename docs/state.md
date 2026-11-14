@@ -4,6 +4,8 @@ Actualizado: 2026-11-14.
 
 ## Plan vigente — Launch Control en Godot
 
+Jorge autorizó iniciar sus tareas con su sesión abierta de Claude Code. Claude confirmó recepción de T001 y preparación local de T002; Codex coordina la revisión mediante los archivos locales `ProyectoNaS/coordination/`. Es un encargo aceptado, no evidencia de tareas completadas. Ver [registro del encargo](handoffs/2026-11-14-jorge-claude-t001-t002.md). El repositorio remoto del juego sigue pendiente de confirmación.
+
 Jorge solicita Spec Kit y Godot basándose en Etapa_1_final y las tres imágenes. Paquete en `specs/001-launch-control-godot/`: especificación, plan, contratos, validación y 42 tareas, siete por integrante. El reparto no supone especialidades. Ver [plan vigente](plan-godot.md) y [ADR-0003](decisions/0003-launch-control-godot-speckit.md). La antena es el primer corte; segundo módulo/calculadora y parámetros son propuestas. No se ha implementado ni probado el juego; primero identificar su repositorio en T001. Spec Kit y el paquete están publicados e integrados en `main` mediante [PR #6](https://github.com/AESRJ/Agentes_Space_Ship/pull/6), con CI Linux/Windows y atribución aprobados. Los integrantes pueden actualizar main y pedir sus tareas por nombre. Véase `docs/sessions/2026-11-14-jorge-plan-godot-publicado.md` para la evidencia.
 
 ## Planificación anterior de Unity — histórica
