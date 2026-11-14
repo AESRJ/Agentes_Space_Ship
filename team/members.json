@@ -3,7 +3,7 @@
   "members": [
     {"id": "gael", "name": "Gael", "github": null, "status": "active"},
     {"id": "adrian", "name": "Adrian", "github": null, "status": "active"},
-    {"id": "kevin", "name": "Kevin", "github": null, "status": "active"},
+    {"id": "kevin", "name": "Kevin", "github": "KVSO755", "status": "active"},
     {"id": "isra", "name": "Isra", "github": null, "status": "active"},
     {"id": "jorge", "name": "Jorge", "github": "AESRJ", "status": "active"},
     {"id": "sojo", "name": "Sojo", "github": null, "status": "active"}
