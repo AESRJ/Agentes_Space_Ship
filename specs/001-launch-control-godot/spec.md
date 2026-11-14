@@ -1,8 +1,8 @@
 # Feature Specification: Launch Control — prototipo cooperativo
 
-**Feature Branch**: `jorge/launch-control-godot`  
-**Created**: 2026-11-14  
-**Status**: propuesta lista para planificación; sin juego implementado.  
+**Feature Branch**: `jorge/launch-control-godot`
+**Created**: 2026-11-14
+**Status**: propuesta lista para planificación; sin juego implementado.
 **Input**: Jorge pide usar `Etapa_1_final.md` y las imágenes, ignorar la metodología del documento y distribuir el prototipo entre los seis integrantes mediante Spec Kit. La elección técnica explícita está en plan.md.
 
 ## Contexto y autoridad

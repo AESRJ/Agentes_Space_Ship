@@ -1,7 +1,7 @@
 # Specification Quality Checklist: Launch Control
 
-**Purpose**: comprobar calidad de la especificación y trazabilidad del reparto, no afirmar pruebas del juego.  
-**Created**: 2026-11-14  
+**Purpose**: comprobar calidad de la especificación y trazabilidad del reparto, no afirmar pruebas del juego.
+**Created**: 2026-11-14
 **Feature**: [spec.md](../spec.md)
 
 ## Calidad del contenido
