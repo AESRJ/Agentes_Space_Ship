@@ -1,5 +1,9 @@
 # Alcance actual
 
+## Actualización de planificación (2026-11-10)
+
+El usuario solicita planear la base en Unity con C# y confirma dos PC por Internet. Estas elecciones sustituyen el estado anterior de motor/lenguaje y conexión sin decidir. Véase [el plan Unity](plan-unity.md). El repositorio del videojuego sigue pendiente. El resto refleja el alcance de la primera entrega; el nuevo encargo añade planificación del juego.
+
 ## Aceptado por el usuario en esta conversación (2026-11-10)
 
 - Montar agentes compartidos en `AESRJ/Agentes_Space_Ship` para seis integrantes.
