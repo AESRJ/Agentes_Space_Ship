@@ -1,5 +1,6 @@
 .venv/
 .memory/
+.space-session.json
 .codex/config.toml
 __pycache__/
 *.pyc
