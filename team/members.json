@@ -2,7 +2,7 @@
   "schema_version": 1,
   "members": [
     {"id": "gael", "name": "Gael", "github": null, "status": "active"},
-    {"id": "adrian", "name": "Adrian", "github": null, "status": "active"},
+    {"id": "adrian", "name": "Adrian", "github": "adrianbalderas373488", "status": "active"},
     {"id": "kevin", "name": "Kevin", "github": "KVSO755", "status": "active"},
     {"id": "isra", "name": "Isra", "github": null, "status": "active"},
     {"id": "jorge", "name": "Jorge", "github": "AESRJ", "status": "active"},

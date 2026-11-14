@@ -1,6 +1,6 @@
 # Identidad y trabajo del equipo con IA
 
-Base creada por solicitud de Jorge el 2026-11-14. Los seis integrantes son Gael (`gael`), Adrian (`adrian`), Kevin (`kevin`), Isra (`isra`), Jorge (`jorge`) y Sojo (`sojo`). Jorge confirmó que usa la cuenta `AESRJ`, verificada con GitHub API. Kevin confirmó el 2026-11-14 que usa la cuenta `KVSO755`, verificada con GitHub API. El registro canónico es `team/members.json`; las otras cuatro cuentas GitHub siguen pendientes y no se asignan por inferencia.
+Base creada por solicitud de Jorge el 2026-11-14. Los seis integrantes son Gael (`gael`), Adrian (`adrian`), Kevin (`kevin`), Isra (`isra`), Jorge (`jorge`) y Sojo (`sojo`). Jorge confirmó que usa la cuenta `AESRJ`, verificada con GitHub API. Kevin confirmó el 2026-11-14 que usa la cuenta `KVSO755`, verificada con GitHub API. Adrian confirmó el 2026-11-14 que usa la cuenta `adrianbalderas373488`, cuya existencia se verificó con la API pública de GitHub. El registro canónico es `team/members.json`; las otras tres cuentas GitHub siguen pendientes y no se asignan por inferencia.
 
 ## Primer paso: identificarse por nombre en cada conversación
 
@@ -10,7 +10,7 @@ Cada persona usa su cuenta GitHub, su propio clon o worktree y su propia autenti
 
 > Soy Gael. Mi tarea es investigar el lanzamiento. Lee AGENTS.md y el estado del proyecto, confirma mi sesión y trabaja solo en esta tarea. Usa mi correo de commits GitHub que te proporcionaré para iniciar la sesión.
 
-La IA confirma a la persona declarada y no la deduce de una cuenta conectada; los vínculos Jorge ↔ AESRJ y Kevin ↔ KVSO755 están confirmados por sus titulares. La sesión queda en `.space-session.json`, ignorado por Git, y pertenece a una rama y tarea. Para una sesión nueva de Codex en la misma tarea se consulta `status`; para cambiar de tarea se inicia otra. La IA nunca asigna la identidad de una persona que no la haya declarado. Si se reanuda esa misma rama con cambios pendientes, `start --resume` permite registrar la identidad sin alterar los archivos; rechaza una rama de otra persona/tarea.
+La IA confirma a la persona declarada y no la deduce de una cuenta conectada; los vínculos Jorge ↔ AESRJ, Kevin ↔ KVSO755 y Adrian ↔ adrianbalderas373488 están confirmados por sus titulares. La sesión queda en `.space-session.json`, ignorado por Git, y pertenece a una rama y tarea. Para una sesión nueva de Codex en la misma tarea se consulta `status`; para cambiar de tarea se inicia otra. La IA nunca asigna la identidad de una persona que no la haya declarado. Si se reanuda esa misma rama con cambios pendientes, `start --resume` permite registrar la identidad sin alterar los archivos; rechaza una rama de otra persona/tarea.
 
 Ejemplo en PowerShell, después de instalar el proyecto y con el árbol de trabajo limpio:
 
