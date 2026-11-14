@@ -2,6 +2,14 @@
 
 Actualizado: 2026-11-14.
 
+## Prototipo local autorizado posteriormente
+
+Mejora solicitada de comprensión: tutorial de lanzamiento con una orden de torre por paso, respuesta sugerida y control concreto para astronauta. Pausas automáticas para leer, desactivables. Compilación y pruebas de guía/pausas/recorrido completo aprobadas; interfaz inicial, avance y recuperación de error revisados visualmente. Evidencia en [sesión de tutorial](sessions/2026-11-10-tutorial-torre.md). Trabajo local en `prototype/launch-tutorial`.
+
+Ampliación solicitada después: despegue 3D con comprobaciones, banda de inclinación y separación cooperativa. Escena `Launch.unity` y [PUZ-002](puzzles/PUZ-002-despegue-local.md), implementados en el proyecto local; compilación Windows y comprobaciones automáticas aprobadas. Revisión visual de despegue y aborto por tiempo realizada; [evidencia y límites](sessions/2026-11-10-despegue-verificado.md). Documentación en rama `prototype/launch-puzzles`, sin integrar. Sigue siendo local en una pantalla; no hay conexión por Internet implementada.
+
+El usuario solicita crear un proyecto Unity local para probar. Se prepara `../OrbitaPrototype` con Unity 6000.6.8f1, escena de dos paneles locales y reglas de energía/captura/transmisión. Esta petición amplía el encargo anterior de planificación. La conexión por Internet sigue pendiente y el proyecto no tiene repositorio remoto asignado. Ver [PUZ-001](puzzles/PUZ-001-energia-local.md). La verificación se registra en la sesión de prototipo; las afirmaciones siguientes de no implementación describen la entrega anterior.
+
 ## Nueva planificación
 
 El usuario elige Unity y C# y dos PC conectados por Internet. Se preparó [un plan por hitos](plan-unity.md), pendiente de implementación y validación. Estas decisiones sustituyen las afirmaciones históricas siguientes sobre motor y conexión abiertos. El repositorio del juego todavía no está acordado. Próximo paso propuesto: conexión remota y prototipo orbital breve antes de la misión completa.
