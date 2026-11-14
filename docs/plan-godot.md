@@ -1,6 +1,6 @@
 # Launch Control — plan vigente y reparto en Godot
 
-Actualizado: 2026-11-14. Encargo: Jorge. Estado: planificación del prototipo, sin implementación del videojuego. Jorge autorizó su publicación para consulta del equipo.
+Actualizado: 2026-11-14. Encargo: Jorge. Estado: planificación del prototipo, sin implementación del videojuego. Publicado e integrado en main mediante [PR #6](https://github.com/AESRJ/Agentes_Space_Ship/pull/6); CI Linux/Windows y atribución aprobados.
 
 El plan vigente está en [specs/001-launch-control-godot](../specs/001-launch-control-godot/spec.md), generado con Specify → Plan → Tasks. Sustituye Unity para este prototipo y excluye la metodología de `Etapa_1_final.md`. La decisión y sus límites constan en [ADR-0003](decisions/0003-launch-control-godot-speckit.md).
 
