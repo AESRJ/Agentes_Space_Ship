@@ -147,7 +147,14 @@ def checkpoint(record_id, summary, evidence, next_steps, kind='avance', status='
         if not existing.endswith(body):
             raise ValueError('ID ya usado con otro contenido. Crea un registro nuevo; no sobrescribas historia.')
     else:
+        # Only copy the declared member ID, never the local commit email.
+        from team_session import SESSION, session
+        member_id = 'no-identificado'
+        if (root / SESSION).is_file():
+            state, _ = session(root)
+            member_id = state['member_id']
         header = (f'# Registro {record_id}\n\nFecha UTC: {datetime.now(timezone.utc).isoformat()}\n'
+                  f'Integrante: {member_id}\n'
                   f'Contexto Git al guardar: {json.dumps(git_context(root), ensure_ascii=False)}\n\n')
         # Exclusive create prevents same-ID races from overwriting another session.
         with path.open('x', encoding='utf-8') as stream:

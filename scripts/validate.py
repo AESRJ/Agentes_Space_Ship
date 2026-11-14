@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import tomllib
 import uuid
+from team_session import members
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -18,6 +19,7 @@ def validate():
         found.add(agent['name'])
     assert found == expected, f'Perfiles inesperados: {found}'
     uuid.UUID(json.loads((ROOT / 'memory/notebook.json').read_text(encoding='utf-8'))['notebook_id'])
+    members(ROOT)
     for name in ('AGENTS.md', 'docs/vision.md', 'docs/scope.md', 'docs/state.md',
                  '.agents/skills/space-memory/SKILL.md', 'integrations/notebooklm/LICENSE.knowingdoing'):
         assert (ROOT / name).is_file(), f'Falta {name}'

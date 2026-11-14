@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Actualizado: 2026-11-10.
+Actualizado: 2026-11-14.
 
 ## Nueva planificación
 
@@ -18,6 +18,7 @@ Se publicaron seis perfiles Codex, instrucciones comunes, skill de memoria, adap
 
 ## Pendientes del equipo
 
+- Identidad del equipo en `team/members.json`: Gael, Adrian, Kevin, Isra, Jorge y Sojo. Jorge confirmó su cuenta `AESRJ`. El primer paso de cada conversación es identificarse por nombre. Herramienta de sesión/commits etiquetados, atribución automática en checkpoints y flujo con IA documentados en `docs/team-workflow.md`. Publicación autorizada por Jorge; evidencias en `docs/sessions/2026-11-14-jorge-identidad-equipo.md`. Faltan las otras cinco cuentas GitHub; no se modificaron reglas remotas.
 - Se recibió la identidad de un compañero: invitación GitHub creada con escritura y acceso NotebookLM concedido como editor. Falta aceptar la invitación GitHub y probar su incorporación. Recibir las identidades restantes para completar los accesos del equipo; los permisos se consultan en los servicios, sin duplicar correos personales en los documentos.
 - Ejecutar la incorporación interactiva en un equipo Windows y confirmar login/permisos.
 - Acordar roles jugables, primer recorrido, público y modalidad de conexión.

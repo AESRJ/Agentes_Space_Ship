@@ -66,13 +66,15 @@ Git conserva versiones verificables; NotebookLM ayuda a recuperar contexto con r
 
 ## Flujo del equipo
 
+Para identificarte, crear tu rama y etiquetar cada commit, sigue [identidad y metodología con IA](docs/team-workflow.md). El primer paso de cada conversación es decir tu nombre: Gael, Adrian, Kevin, Isra, Jorge o Sojo. La IA lo pregunta si falta; una sesión anterior no sustituye esta identificación. Los perfiles de agentes son compartidos y distintos de los integrantes humanos.
+
 1. Actualizar main sin cambios locales y crear rama por tarea.
 2. Leer [visión](docs/vision.md), [alcance](docs/scope.md), [estado](docs/state.md) y consultar NotebookLM.
 3. Trabajar en el encargo; un escritor por archivo/escena.
 4. Guardar checkpoint, verificar herramientas o diseño y abrir PR con evidencia.
 5. Revisar e integrar; el integrador publica el contexto consolidado.
 
-Ejemplo de rama: `git switch -c diseno/puzzle-001`. Antes de empezar, `git pull --ff-only` en main; si hay divergencias o cambios locales, resolverlos sin reset forzado.
+Ejemplo de rama: `gael/puzzle-001`, creada con `scripts/team_session.py start`. Antes de empezar, `git pull --ff-only` en main; si hay divergencias o cambios locales, resolverlos sin reset forzado.
 
 La protección de main, revisores y permisos del equipo se configuran en GitHub cuando estén identificados los integrantes; este repositorio no presupone esas protecciones activadas.
 
