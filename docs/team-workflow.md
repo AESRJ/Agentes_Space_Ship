@@ -1,10 +1,14 @@
 # Identidad y trabajo del equipo con IA
 
-Base creada por solicitud de Jorge el 2026-11-14. Los seis integrantes son Gael (`gael`), Adrian (`adrian`), Kevin (`kevin`), Isra (`isra`), Jorge (`jorge`) y Sojo (`sojo`). Jorge confirmó que usa la cuenta `AESRJ`, verificada con GitHub API. Kevin confirmó el 2026-11-14 que usa la cuenta `KVSO755`, verificada con GitHub API. El registro canónico es `team/members.json`; las otras cuatro cuentas GitHub siguen pendientes y no se asignan por inferencia.
+## Estado vigente del equipo (2026-11-14)
+
+Activos: Jorge (AESRJ), Gael (GaelFlores04), Adrian (adrianbalderas373488), Kevin (KVSO755) e Isra (issgg), con escritura comprobada en AESRJ/LaunchControlGodot. Sojo no está incorporado por instrucción de Jorge: registro pending, sin tareas activas. El reparto vigente son 42 tareas entre cinco: 9/9/8/8/8. Las referencias siguientes a seis personas describen el registro inicial y quedan sustituidas para la operación actual.
+
+Registro canónico: `team/members.json`. Las cinco cuentas activas están confirmadas y la de Sojo sigue sin solicitarse mientras no esté incorporado. El registro inicial de seis se conserva en ADR-0002 y en Git como historia.
 
 ## Primer paso: identificarse por nombre en cada conversación
 
-Antes de trabajar, cada persona dice «Soy Gael», «Soy Adrian», «Soy Kevin», «Soy Isra», «Soy Jorge» o «Soy Sojo». Si no lo ha dicho en la conversación actual, la IA pregunta su nombre antes de consultar memoria o actuar. Una sesión local anterior no reemplaza esta confirmación; si ya lo dijo, no se le vuelve a preguntar.
+Antes de trabajar, cada persona dice «Soy Gael», «Soy Adrian», «Soy Kevin», «Soy Isra» o «Soy Jorge». Si no lo ha dicho en la conversación actual, la IA pregunta su nombre antes de consultar memoria o actuar. Una sesión local anterior no reemplaza esta confirmación; si ya lo dijo, no se le vuelve a preguntar.
 
 Cada persona usa su cuenta GitHub, su propio clon o worktree y su propia autenticación Google. No compartan una carpeta de trabajo simultánea. Dentro de Codex puede escribir:
 
@@ -47,7 +51,7 @@ Team-Member: gael
 AI-Assisted: true
 ```
 
-El autor y committer Git son Gael con el correo que él declaró. GitHub relaciona el commit con su cuenta mediante un correo asociado a ella. `--without-ai` registra `AI-Assisted: false` cuando corresponda. Si varias personas contribuyeron realmente al mismo commit, agregar `Co-authored-by` con los datos que ellas indiquen; no atribuir trabajo a las seis personas por defecto. El registro del equipo no guarda correos, aunque los commits sí contienen el correo elegido.
+El autor y committer Git son Gael con el correo que él declaró. GitHub relaciona el commit con su cuenta mediante un correo asociado a ella. `--without-ai` registra `AI-Assisted: false` cuando corresponda. Si varias personas contribuyeron realmente al mismo commit, agregar `Co-authored-by` con los datos que ellas indiquen; no atribuir trabajo a todo el equipo por defecto. El registro del equipo no guarda correos, aunque los commits sí contienen el correo elegido.
 
 La herramienta comprueba identidad, rama y cambios preparados. Un `git commit` normal no recibe etiquetas automáticamente: utilicen el comando indicado. El workflow `Atribución del equipo` comprueba los commits no merge de cada PR; no reescribe el historial antiguo. Las etiquetas son declaraciones, no autenticación: para vincularlas a cuentas verificadas faltan los usuarios GitHub y una comprobación adicional. Los commits directos a main no pasan por este workflow de PR.
 
@@ -64,7 +68,7 @@ Es una propuesta adaptada al equipo, no una afirmación de que existe una metodo
 5. **Integrar pronto.** Abrir PR con identidad, objetivo, evidencia y límites. Para cambios rutinarios, el responsable puede fusionarlo cuando las comprobaciones pasan, sin esperar aprobación de otra persona. Si cambia alcance, contratos compartidos o una decisión abierta, acordarlo con los afectados antes de implementar; no es una aprobación obligatoria de todos los PR. Integrar con frecuencia y actualizar main antes de la siguiente tarea.
 6. **Cerrar con memoria útil.** Registrar responsable, tarea, resultado, fuentes, pruebas y pendientes en un checkpoint. `project_memory.py` añade automáticamente `Integrante: <id>` desde la sesión válida, sin copiar el correo local; rechaza una sesión cuya rama no coincide. Los registros antiguos sin identidad se conservan como evidencia histórica, sin atribuirlos retroactivamente. Solo el integrador designado publica el contexto consolidado tras integrar. Reunión breve de coordinación cuando existan bloqueos y revisión semanal del proceso para ajustar lo que produzca conflictos.
 
-En GitHub, el propietario puede configurar PR obligatorios, cero aprobaciones y comprobaciones de CI/atribución requeridas, si el plan y la visibilidad lo permiten. No se han modificado esas reglas. Evitar forzar pushes y no convertir la publicación a main en una carrera entre seis personas.
+En GitHub, el propietario puede configurar PR obligatorios, cero aprobaciones y comprobaciones de CI/atribución requeridas, si el plan y la visibilidad lo permiten. No se han modificado esas reglas. Evitar forzar pushes y no convertir la publicación a main en una carrera entre integrantes.
 
 ## Plantilla de encargo para IA
 
@@ -83,4 +87,4 @@ Entrega: diff revisable, evidencia y checkpoint con responsable.
 
 Consulta: 2026-11-14. GitHub recomienda [tareas claras, acotadas y con criterios de aceptación, junto con un entorno donde el agente pueda validar](https://docs.github.com/en/copilot/tutorials/cloud-agent/get-the-best-results). También recomienda [evaluar y probar el resultado generado por IA](https://docs.github.com/en/copilot/concepts/prompting-and-context/prompt-engineering). Estas fuentes sostienen las prácticas de alcance y verificación; el tablero, los límites de tareas y el flujo sin aprobación externa son una adaptación propuesta para este equipo. No requieren contratar Copilot: pueden aplicarse con las herramientas que ya utilizan.
 
-Confirmado por Jorge: seis nombres, Jorge ↔ AESRJ y autoría de esta sesión como Jorge. Pendiente: cuentas GitHub de los otros cinco integrantes e incorporación real de cada equipo Windows. El usuario autorizó publicar e integrar estos cambios y actualizar NotebookLM. Los recibos y registros de publicación distinguen preparación local, publicación remota e integración; no se han cambiado las reglas remotas.
+Estado actual: cinco nombres activos y cuentas confirmadas; Sojo pending por instrucción de Jorge. Pendiente la comprobación personal de cada equipo. Los recibos y el historial Git distinguen preparación, publicación e integración; no se declaran pruebas inexistentes.

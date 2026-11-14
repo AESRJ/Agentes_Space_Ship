@@ -7,6 +7,8 @@
 
 ## Contexto y autoridad
 
+**Actualización del equipo**: Jorge aclara que Sojo no está incorporado por ahora. El equipo activo es Jorge, Gael, Adrian, Kevin e Isra; ver reparto actualizado. La mención original de seis conserva el origen del encargo, no el estado actual.
+
 La fuente define dos puestos en primera persona, panel modular, laptop con manual, cuenta regresiva, dificultad por cantidad de componentes, despegue y fallo cómico. Se conserva su regla de antena. Su sección «Primer mensaje para trabajar con IA» no gobierna el proceso: Jorge solicita Specify → Plan → Tasks. Las fuentes originales y hashes están en [references](references/README.md).
 
 Se mantienen dos PC por Internet del contexto previo. Los valores de tiempo, segundo módulo, presentación simplificada y responsabilidades se proponen para hacer ejecutable el plan; no representan aprobación individual de los demás integrantes.

@@ -8,7 +8,7 @@ Jorge solicita Godot y Spec Kit, sustituyendo la planificación histórica de Un
 
 ## Technical Context
 
-- **Motor**: Godot, decisión de Jorge. Versión propuesta fijada para los seis: 4.7.2 stable; comprobar disponibilidad de binario y export templates en T002.
+- **Motor**: Godot, decisión de Jorge. Versión propuesta fijada para los cinco activos: 4.7.2 stable; comprobar disponibilidad de binario y export templates en T002.
 - **Language/Version**: propuesta GDScript tipado y edición estándar, no C# heredado del plan Unity.
 - **Primary Dependencies**: componentes integrados de Godot: Node3D, Camera3D, Control, CanvasLayer, ENetMultiplayerPeer y API RPC. Sin plugins externos obligatorios.
 - **Storage**: Resources locales para configuración, reglas y manual; sesión efímera en memoria. No base de datos.
@@ -55,7 +55,7 @@ GAME/
 ├── ui/hud/round_hud.tscn               # Isra: persistent clock
 ├── resources/{modules,manual,difficulties}/
 ├── assets/{cockpit,tower,outcomes}/
-├── harness/                            # Sojo: reproducible validation scenes
+├── harness/                            # según task-index.json: reproducible validation scenes
 └── docs/{setup,art,qa,demo}/
 ```
 

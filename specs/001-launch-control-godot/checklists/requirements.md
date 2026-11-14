@@ -24,7 +24,7 @@
 ## Preparación para implementación
 
 - [x] Plan, investigación oficial, modelo, contratos y guía de validación disponibles.
-- [x] 42 tareas con dueño, ruta, dependencia y criterio de terminado; siete por integrante.
+- [x] 42 tareas con dueño, ruta, dependencia y criterio de terminado; 8/9 por integrante activo.
 - [x] Requisitos y criterios enlazados a tareas; ninguna tarea se marca implementada.
 - [x] Corte con antena separado de entrega completa y validación externa.
 - [x] Constitución instalada se reconoce como plantilla sin ratificar; no se inventa aprobación.

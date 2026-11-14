@@ -59,7 +59,7 @@ class TeamSessionTests(unittest.TestCase):
 
     def test_rejects_pending_person_dirty_tree_and_invalid_task(self):
         with self.assertRaises(ValueError):
-            self.begin('integrante-06')
+            self.begin('sojo')
         with self.assertRaises(ValueError):
             team.start('gael', '../unsafe', 'gael@example.test', self.root)
         self.stage()
@@ -93,10 +93,10 @@ class TeamSessionTests(unittest.TestCase):
             team.commit('leak session', root=self.root)
 
     def test_resume_identifies_existing_dirty_work_only_on_matching_branch(self):
-        self.begin('sojo')
+        self.begin('gael')
         self.stage()
-        team.start('sojo', 'tarea-001', 'sojo@example.test', self.root, resume=True)
-        self.assertEqual(team.session(self.root)[0]['member_id'], 'sojo')
+        team.start('gael', 'tarea-001', 'gael@example.test', self.root, resume=True)
+        self.assertEqual(team.session(self.root)[0]['member_id'], 'gael')
         with self.assertRaises(ValueError):
             team.start('jorge', 'tarea-001', 'jorge@example.test', self.root, resume=True)
         self.assertTrue(self.git('diff', '--cached', '--name-only'))

@@ -7,7 +7,9 @@
     "path": "GAME/docs/setup/repository.md",
     "covers": [
       "FR-019"
-    ]
+    ],
+    "readiness": "technical_base_published",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/1"
   },
   {
     "id": "T002",
@@ -20,11 +22,13 @@
     "covers": [
       "FR-008",
       "FR-009"
-    ]
+    ],
+    "readiness": "technical_base_published",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/1"
   },
   {
     "id": "T003",
-    "owner": "sojo",
+    "owner": "jorge",
     "story": null,
     "depends_on": [
       "T002"
@@ -33,7 +37,9 @@
     "covers": [
       "FR-018",
       "SC-006"
-    ]
+    ],
+    "readiness": "changes_requested",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/2"
   },
   {
     "id": "T004",
@@ -48,7 +54,8 @@
       "FR-009",
       "FR-018",
       "FR-019"
-    ]
+    ],
+    "readiness": "ready_to_start"
   },
   {
     "id": "T005",
@@ -62,7 +69,8 @@
       "FR-003",
       "FR-004",
       "FR-019"
-    ]
+    ],
+    "readiness": "ready_to_start"
   },
   {
     "id": "T006",
@@ -76,7 +84,8 @@
       "FR-005",
       "FR-010",
       "FR-011"
-    ]
+    ],
+    "readiness": "ready_to_start"
   },
   {
     "id": "T007",
@@ -90,7 +99,8 @@
       "FR-001",
       "FR-015",
       "FR-020"
-    ]
+    ],
+    "readiness": "ready_to_start"
   },
   {
     "id": "T008",
@@ -105,7 +115,8 @@
       "FR-007",
       "FR-015",
       "FR-016"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T009",
@@ -119,7 +130,8 @@
       "FR-002",
       "FR-007",
       "SC-002"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T010",
@@ -133,11 +145,12 @@
       "FR-004",
       "FR-006",
       "FR-017"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T011",
-    "owner": "sojo",
+    "owner": "adrian",
     "story": null,
     "depends_on": [
       "T007",
@@ -150,7 +163,8 @@
       "FR-007",
       "FR-015",
       "FR-017"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T012",
@@ -166,7 +180,8 @@
     "covers": [
       "FR-003",
       "FR-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T013",
@@ -180,7 +195,8 @@
     "covers": [
       "FR-001",
       "FR-013"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T014",
@@ -194,7 +210,8 @@
       "FR-005",
       "FR-006",
       "SC-001"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T015",
@@ -209,7 +226,8 @@
       "FR-003",
       "FR-005",
       "FR-018"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T016",
@@ -223,7 +241,8 @@
       "FR-003",
       "FR-005",
       "FR-010"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T017",
@@ -240,7 +259,8 @@
       "FR-006",
       "FR-007",
       "FR-017"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T018",
@@ -258,11 +278,12 @@
       "FR-002",
       "FR-003",
       "FR-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T019",
-    "owner": "sojo",
+    "owner": "kevin",
     "story": "US1",
     "depends_on": [
       "T011",
@@ -277,7 +298,8 @@
       "FR-015",
       "FR-017",
       "SC-001"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T020",
@@ -292,7 +314,8 @@
       "FR-003",
       "FR-008",
       "FR-018"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T021",
@@ -305,7 +328,8 @@
     "covers": [
       "FR-009",
       "FR-018"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T022",
@@ -320,7 +344,8 @@
       "FR-003",
       "FR-009",
       "FR-010"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T023",
@@ -334,7 +359,8 @@
       "FR-002",
       "FR-018",
       "SC-002"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T024",
@@ -352,11 +378,12 @@
       "FR-008",
       "FR-009",
       "FR-010"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T025",
-    "owner": "sojo",
+    "owner": "gael",
     "story": "US2",
     "depends_on": [
       "T024"
@@ -370,7 +397,8 @@
       "FR-018",
       "SC-002",
       "SC-006"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T026",
@@ -385,7 +413,8 @@
       "FR-006",
       "FR-011",
       "FR-019"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T027",
@@ -400,7 +429,8 @@
       "FR-006",
       "FR-011",
       "FR-018"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T028",
@@ -415,7 +445,8 @@
       "FR-010",
       "FR-011",
       "FR-019"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T029",
@@ -429,7 +460,8 @@
       "FR-002",
       "FR-012",
       "SC-004"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T030",
@@ -444,7 +476,8 @@
       "FR-004",
       "FR-013",
       "SC-003"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T031",
@@ -464,11 +497,12 @@
       "FR-011",
       "FR-012",
       "FR-013"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T032",
-    "owner": "sojo",
+    "owner": "isra",
     "story": "US3",
     "depends_on": [
       "T031"
@@ -482,7 +516,8 @@
       "FR-013",
       "SC-003",
       "SC-004"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T033",
@@ -498,7 +533,8 @@
       "FR-014",
       "FR-019",
       "SC-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T034",
@@ -513,7 +549,8 @@
       "FR-015",
       "FR-019",
       "SC-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T035",
@@ -529,7 +566,8 @@
       "FR-015",
       "FR-016",
       "SC-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T036",
@@ -543,11 +581,12 @@
       "FR-004",
       "FR-016",
       "SC-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T037",
-    "owner": "sojo",
+    "owner": "gael",
     "story": "US4",
     "depends_on": [
       "T032",
@@ -563,7 +602,8 @@
       "FR-015",
       "FR-016",
       "SC-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T038",
@@ -579,7 +619,8 @@
       "FR-018",
       "FR-020",
       "SC-006"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T039",
@@ -594,11 +635,12 @@
       "FR-020",
       "SC-002",
       "SC-005"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T040",
-    "owner": "sojo",
+    "owner": "jorge",
     "story": null,
     "depends_on": [
       "T038",
@@ -633,7 +675,8 @@
       "SC-005",
       "SC-006",
       "SC-007"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T041",
@@ -645,7 +688,8 @@
     "path": "GAME/docs/art/asset-register.md",
     "covers": [
       "FR-019"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   },
   {
     "id": "T042",
@@ -665,6 +709,7 @@
       "FR-014",
       "FR-016",
       "FR-020"
-    ]
+    ],
+    "readiness": "waiting_for_dependencies"
   }
 ]
