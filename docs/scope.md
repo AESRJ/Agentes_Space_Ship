@@ -1,5 +1,12 @@
 # Alcance actual
 
+## Alcance vigente — encargo de Jorge (2026-11-14)
+
+Planificar Launch Control en Godot usando Spec Kit y asignar tareas a Gael, Adrian, Kevin, Isra, Jorge y Sojo. Se toman requisitos y referencias visuales de `Etapa_1_final.md` y sus tres imágenes; se excluye la metodología del documento. Se entregan especificación, investigación, diseño, contratos y 42 tareas (siete por persona). [Plan vigente](plan-godot.md).
+
+Dos roles y Godot están definidos para este prototipo; la referencia previa a Unity o a motor/roles aún abiertos es histórica. El primer corte incluye antena, manual, tiempo y desenlaces compartidos; la ampliación con segundo módulo/calculadora es propuesta. No se implementa el juego en el repositorio de agentes ni se crea un destino por inferencia; T001 identifica ese repositorio. No se asignan cuentas ni se publican issues sin identidades confirmadas.
+
+
 ## Actualización de planificación (2026-11-10)
 
 El usuario solicita planear la base en Unity con C# y confirma dos PC por Internet. Estas elecciones sustituyen el estado anterior de motor/lenguaje y conexión sin decidir. Véase [el plan Unity](plan-unity.md). El repositorio del videojuego sigue pendiente. El resto refleja el alcance de la primera entrega; el nuevo encargo añade planificación del juego.

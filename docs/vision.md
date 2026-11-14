@@ -1,5 +1,10 @@
 # Contexto y visión provisional
 
+## Dirección vigente — Launch Control en Godot (2026-11-14)
+
+Jorge solicita planificar el prototipo de `Etapa_1_final.md` con Spec Kit y Godot: astronauta en cabina, torre con laptop/manual, reloj compartido y acertijos antes del despegue. Para esta entrega son dos roles, primera persona y dos PC por Internet; el corte inicial usa la antena. El reparto inicial equilibrado se concreta en [el plan Godot](plan-godot.md) y [ADR-0003](decisions/0003-launch-control-godot-speckit.md). Godot sustituye la selección anterior de Unity para este prototipo; el resto de esta página se conserva como historia y no reabre esa decisión. Las ampliaciones y detalles técnicos del nuevo plan se distinguen como propuestas.
+
+
 ## Actualización posterior de la misma fecha
 
 El usuario aporta «Órbita: contacto con Tierra» como nombre provisional y propone construir, ensayar, lanzar, operar y evaluar consecuencias. Solicita planear con Unity y C#, y confirma dos PC por Internet. Véase [el plan de trabajo](plan-unity.md). Esto sustituye las menciones posteriores a motor, lenguaje y conexión sin decidir. El alcance detallado y la arquitectura siguen propuestos.

@@ -1,6 +1,6 @@
 # Space Ship: instrucciones compartidas
 
-Este repositorio contiene agentes, investigación, diseño, decisiones y memoria de un equipo de seis personas. El juego tendrá otro repositorio; todavía no existe un destino acordado. No iniciar un juego, elegir motor ni desplegar producto por inferencia.
+Este repositorio contiene agentes, investigación, diseño, decisiones y memoria de un equipo de seis personas. El juego tendrá otro repositorio; todavía no existe un destino acordado. No iniciar un juego ni desplegar producto por inferencia. Godot y la planificación con Spec Kit para Launch Control fueron solicitados explícitamente por Jorge; ver docs/plan-godot.md y ADR-0003.
 
 ## Contexto al iniciar
 
@@ -8,13 +8,15 @@ El primer paso de cada conversación de trabajo es que la persona se identifique
 
 Lee `docs/vision.md`, `docs/scope.md` y `docs/state.md`, y después solo la documentación de la tarea. Usa la skill `.agents/skills/space-memory/SKILL.md` para consultar el MCP `space_ship_memory`. El cuaderno está fijado en `memory/notebook.json`; nunca uses otro cuaderno por estar activo globalmente.
 
+Cuando alguien solicite sus tareas, consulta `specs/001-launch-control-godot/assignments.md`, `tasks.md` y `task-index.json`, filtra por el ID confirmado y muestra sus siete tareas con dependencias y la primera que pueda empezar. No rehagas el reparto ni marques dependencias como terminadas sin evidencia. Si T001/T002 siguen pendientes, explica que el arranque del código depende de la base de Jorge; se pueden revisar los documentos mientras tanto. Para ejecutar los comandos Spec Kit en un clon nuevo, selecciona esta funcionalidad mediante `SPECIFY_FEATURE_DIRECTORY=specs/001-launch-control-godot` en el entorno del comando; el puntero `.specify/feature.json` es local y no se comparte.
+
 Git conserva decisiones y evidencia versionada; NotebookLM es la memoria consultable compartida. Una respuesta de NotebookLM necesita contraste con fuentes y archivos vigentes: no equivale a aprobación. Si hay discrepancia, identifica versiones y registra el conflicto. La documentación antigua puede describir propuestas ya sustituidas.
 
 ## Alcance y evidencia
 
 - Se ha autorizado montar este sistema de agentes y memoria. El diseño del juego sigue en exploración.
 - Distingue propuesta, decisión aceptada por una persona, implementación y verificación. Una decisión aceptada indica quién la aprobó y dónde consta; no inventes aprobación.
-- Conserva la cooperación astronauta/torre, el objetivo educativo y las consecuencias de decisiones. El tercer rol, el motor y la modalidad de conexión siguen abiertos.
+- Conserva la cooperación astronauta/torre, el objetivo educativo y las consecuencias de decisiones. Para Launch Control se planifican astronauta y torre, Godot y dos PC por Internet; otros roles o modalidades requieren una decisión posterior.
 - Todo puzzle usa `docs/puzzles/TEMPLATE.md` y conecta fuente científica, reparto de información, reglas, integración y pruebas. Señala simplificaciones; no inventes datos NASA, físicas ni APIs.
 - No afirmes haber probado código o publicado cambios sin evidencia. Nunca guardes credenciales, cookies, conversaciones personales o logs completos en Git o NotebookLM.
 
