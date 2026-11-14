@@ -10,13 +10,17 @@ Esta liberación técnica satisface el requisito previo de arranque de T003/T004
 
 | Persona | Siguiente tarea | Estado real |
 | --- | --- | --- |
-| Jorge | T003: harness | implementada en PR #2, revisión solicita corregir R1–R3; no finalizada |
+| Jorge | T003: harness | PR #2 fusionado por solicitud explícita de Jorge; commit 3cf3de7, CI Linux/Windows aprobado para cabecera 11bab3a; no acredita puestos reales |
 | Gael | T004: guía visual | liberada; sin evidencia de implementación aún |
 | Adrian | T007: transporte | liberada; sin evidencia de implementación aún |
 | Kevin | T005: definición de módulo | liberada; sin evidencia de implementación aún |
 | Isra | T006: contenido de manual | liberada; sin evidencia de implementación aún |
 
-## Revisión de T003
+## Cierre de integración de T003
+
+PR #2 fusionado con squash el 2026-11-14T23:19:38Z en `3cf3de79f9dd360013a4ed8fa41a27a81e6b7482`, con autorización explícita de Jorge y CI Linux/Windows 43652062713 aprobado para cabecera `11bab3a`. El historial siguiente corresponde a la revisión anterior, no a un bloqueo de fusión actual.
+
+## Revisión anterior de T003 — historial
 
 Cabecera revisada: `105a1e7d37aa0dc8dd0184ee57c3fc5d1c30113b`, PR #2 abierto. CI de esa revisión en verde, pero casos independientes detectan éxito falso cuando no se escribe registro, argumento frames inválido que no termina y resolución headless falsamente validada. Ver [revisión](../../docs/reviews/2026-11-14-claude-base-y-harness.md). Claude recibió instrucciones de corregir y añadir regresiones; la aprobación de CI previa no acredita esas correcciones.
 

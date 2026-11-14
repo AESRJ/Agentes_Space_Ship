@@ -2,6 +2,10 @@
 
 Actualizado: 2026-11-14.
 
+## Actualización — T003 fusionada por petición de Jorge
+
+Jorge pidió explícitamente que Codex hiciera la fusión del PR #2. GitHub confirma MERGED en `3cf3de79f9dd360013a4ed8fa41a27a81e6b7482`, cabecera `11bab3a`, CI Linux/Windows 43652062713 aprobado. Se usó squash, revisión fijada y trailers de Jorge, sin bypass ni cambio de permisos. Esta actualización sustituye el estado anterior de cambios solicitados/fusión pendiente de T003; las secciones de revisión conservan la evidencia histórica de la cabecera 105a1e7. No acredita pruebas de puestos reales o gameplay. Ver `docs/sessions/2026-11-14-jorge-fusion-t003-autorizada.md`.
+
 ## Equipo y destino vigentes
 
 Activos: Jorge (`AESRJ`), Gael (`GaelFlores04`), Adrian (`adrianbalderas373488`), Kevin (`KVSO755`) e Isra (`issgg`). Escritura efectiva comprobada en el juego privado https://github.com/AESRJ/LaunchControlGodot. No hay invitaciones pendientes al consultar. Sojo no está incorporado por instrucción de Jorge, figura pending y no tiene tareas activas.

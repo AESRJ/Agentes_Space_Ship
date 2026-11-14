@@ -38,8 +38,9 @@
       "FR-018",
       "SC-006"
     ],
-    "readiness": "changes_requested",
-    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/2"
+    "readiness": "merged_fixture_validated",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/2",
+    "merged_commit": "3cf3de79f9dd360013a4ed8fa41a27a81e6b7482"
   },
   {
     "id": "T004",
