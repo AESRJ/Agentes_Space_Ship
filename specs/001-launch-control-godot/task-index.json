@@ -1,0 +1,670 @@
+[
+  {
+    "id": "T001",
+    "owner": "jorge",
+    "story": null,
+    "depends_on": [],
+    "path": "GAME/docs/setup/repository.md",
+    "covers": [
+      "FR-019"
+    ]
+  },
+  {
+    "id": "T002",
+    "owner": "jorge",
+    "story": null,
+    "depends_on": [
+      "T001"
+    ],
+    "path": "GAME/project.godot",
+    "covers": [
+      "FR-008",
+      "FR-009"
+    ]
+  },
+  {
+    "id": "T003",
+    "owner": "sojo",
+    "story": null,
+    "depends_on": [
+      "T002"
+    ],
+    "path": "GAME/harness/scene_smoke.tscn",
+    "covers": [
+      "FR-018",
+      "SC-006"
+    ]
+  },
+  {
+    "id": "T004",
+    "owner": "gael",
+    "story": null,
+    "depends_on": [
+      "T002"
+    ],
+    "path": "GAME/docs/art/visual-guide.md",
+    "covers": [
+      "FR-008",
+      "FR-009",
+      "FR-018",
+      "FR-019"
+    ]
+  },
+  {
+    "id": "T005",
+    "owner": "kevin",
+    "story": null,
+    "depends_on": [
+      "T002"
+    ],
+    "path": "GAME/resources/modules/module_definition.gd",
+    "covers": [
+      "FR-003",
+      "FR-004",
+      "FR-019"
+    ]
+  },
+  {
+    "id": "T006",
+    "owner": "isra",
+    "story": null,
+    "depends_on": [
+      "T002"
+    ],
+    "path": "GAME/docs/manual/content-outline.md",
+    "covers": [
+      "FR-005",
+      "FR-010",
+      "FR-011"
+    ]
+  },
+  {
+    "id": "T007",
+    "owner": "adrian",
+    "story": null,
+    "depends_on": [
+      "T002"
+    ],
+    "path": "GAME/autoload/session_service.gd",
+    "covers": [
+      "FR-001",
+      "FR-015",
+      "FR-020"
+    ]
+  },
+  {
+    "id": "T008",
+    "owner": "adrian",
+    "story": null,
+    "depends_on": [
+      "T007"
+    ],
+    "path": "GAME/autoload/round_controller.gd",
+    "covers": [
+      "FR-004",
+      "FR-007",
+      "FR-015",
+      "FR-016"
+    ]
+  },
+  {
+    "id": "T009",
+    "owner": "adrian",
+    "story": null,
+    "depends_on": [
+      "T008"
+    ],
+    "path": "GAME/autoload/server_clock.gd",
+    "covers": [
+      "FR-002",
+      "FR-007",
+      "SC-002"
+    ]
+  },
+  {
+    "id": "T010",
+    "owner": "kevin",
+    "story": null,
+    "depends_on": [
+      "T005"
+    ],
+    "path": "GAME/scripts/modules/module_runtime.gd",
+    "covers": [
+      "FR-004",
+      "FR-006",
+      "FR-017"
+    ]
+  },
+  {
+    "id": "T011",
+    "owner": "sojo",
+    "story": null,
+    "depends_on": [
+      "T007",
+      "T008",
+      "T009"
+    ],
+    "path": "GAME/harness/session_contract_runner.gd",
+    "covers": [
+      "FR-001",
+      "FR-007",
+      "FR-015",
+      "FR-017"
+    ]
+  },
+  {
+    "id": "T012",
+    "owner": "jorge",
+    "story": null,
+    "depends_on": [
+      "T007",
+      "T008",
+      "T009",
+      "T010"
+    ],
+    "path": "GAME/scenes/main.tscn",
+    "covers": [
+      "FR-003",
+      "FR-007"
+    ]
+  },
+  {
+    "id": "T013",
+    "owner": "adrian",
+    "story": "US1",
+    "depends_on": [
+      "T007",
+      "T008"
+    ],
+    "path": "GAME/scenes/lobby/lobby.tscn",
+    "covers": [
+      "FR-001",
+      "FR-013"
+    ]
+  },
+  {
+    "id": "T014",
+    "owner": "kevin",
+    "story": "US1",
+    "depends_on": [
+      "T010"
+    ],
+    "path": "GAME/scripts/modules/antenna_rule.gd",
+    "covers": [
+      "FR-005",
+      "FR-006",
+      "SC-001"
+    ]
+  },
+  {
+    "id": "T015",
+    "owner": "gael",
+    "story": "US1",
+    "depends_on": [
+      "T004",
+      "T010"
+    ],
+    "path": "GAME/scenes/modules/antenna_view.tscn",
+    "covers": [
+      "FR-003",
+      "FR-005",
+      "FR-018"
+    ]
+  },
+  {
+    "id": "T016",
+    "owner": "isra",
+    "story": "US1",
+    "depends_on": [
+      "T006"
+    ],
+    "path": "GAME/ui/manual/antenna_page.tscn",
+    "covers": [
+      "FR-003",
+      "FR-005",
+      "FR-010"
+    ]
+  },
+  {
+    "id": "T017",
+    "owner": "adrian",
+    "story": "US1",
+    "depends_on": [
+      "T009",
+      "T013",
+      "T014"
+    ],
+    "path": "GAME/autoload/session_service.gd",
+    "covers": [
+      "FR-004",
+      "FR-006",
+      "FR-007",
+      "FR-017"
+    ]
+  },
+  {
+    "id": "T018",
+    "owner": "jorge",
+    "story": "US1",
+    "depends_on": [
+      "T012",
+      "T015",
+      "T016",
+      "T017"
+    ],
+    "path": "GAME/scenes/main.tscn",
+    "covers": [
+      "FR-001",
+      "FR-002",
+      "FR-003",
+      "FR-007"
+    ]
+  },
+  {
+    "id": "T019",
+    "owner": "sojo",
+    "story": "US1",
+    "depends_on": [
+      "T011",
+      "T018"
+    ],
+    "path": "GAME/docs/qa/antenna-round.md",
+    "covers": [
+      "FR-001",
+      "FR-005",
+      "FR-006",
+      "FR-007",
+      "FR-015",
+      "FR-017",
+      "SC-001"
+    ]
+  },
+  {
+    "id": "T020",
+    "owner": "gael",
+    "story": "US2",
+    "depends_on": [
+      "T004",
+      "T019"
+    ],
+    "path": "GAME/scenes/cockpit/cockpit.tscn",
+    "covers": [
+      "FR-003",
+      "FR-008",
+      "FR-018"
+    ]
+  },
+  {
+    "id": "T021",
+    "owner": "gael",
+    "story": "US2",
+    "depends_on": [
+      "T020"
+    ],
+    "path": "GAME/scenes/tower/tower.tscn",
+    "covers": [
+      "FR-009",
+      "FR-018"
+    ]
+  },
+  {
+    "id": "T022",
+    "owner": "isra",
+    "story": "US2",
+    "depends_on": [
+      "T016",
+      "T019"
+    ],
+    "path": "GAME/ui/manual/manual_shell.tscn",
+    "covers": [
+      "FR-003",
+      "FR-009",
+      "FR-010"
+    ]
+  },
+  {
+    "id": "T023",
+    "owner": "isra",
+    "story": "US2",
+    "depends_on": [
+      "T022"
+    ],
+    "path": "GAME/ui/hud/round_hud.tscn",
+    "covers": [
+      "FR-002",
+      "FR-018",
+      "SC-002"
+    ]
+  },
+  {
+    "id": "T024",
+    "owner": "jorge",
+    "story": "US2",
+    "depends_on": [
+      "T020",
+      "T021",
+      "T022",
+      "T023"
+    ],
+    "path": "GAME/scenes/main.tscn",
+    "covers": [
+      "FR-003",
+      "FR-008",
+      "FR-009",
+      "FR-010"
+    ]
+  },
+  {
+    "id": "T025",
+    "owner": "sojo",
+    "story": "US2",
+    "depends_on": [
+      "T024"
+    ],
+    "path": "GAME/docs/qa/workstations.md",
+    "covers": [
+      "FR-002",
+      "FR-008",
+      "FR-009",
+      "FR-010",
+      "FR-018",
+      "SC-002",
+      "SC-006"
+    ]
+  },
+  {
+    "id": "T026",
+    "owner": "kevin",
+    "story": "US3",
+    "depends_on": [
+      "T014",
+      "T019"
+    ],
+    "path": "GAME/scripts/modules/code_rule.gd",
+    "covers": [
+      "FR-006",
+      "FR-011",
+      "FR-019"
+    ]
+  },
+  {
+    "id": "T027",
+    "owner": "kevin",
+    "story": "US3",
+    "depends_on": [
+      "T026"
+    ],
+    "path": "GAME/scenes/modules/code_view.tscn",
+    "covers": [
+      "FR-003",
+      "FR-006",
+      "FR-011",
+      "FR-018"
+    ]
+  },
+  {
+    "id": "T028",
+    "owner": "isra",
+    "story": "US3",
+    "depends_on": [
+      "T022",
+      "T026"
+    ],
+    "path": "GAME/ui/manual/code_page.tscn",
+    "covers": [
+      "FR-010",
+      "FR-011",
+      "FR-019"
+    ]
+  },
+  {
+    "id": "T029",
+    "owner": "isra",
+    "story": "US3",
+    "depends_on": [
+      "T028"
+    ],
+    "path": "GAME/ui/tools/calculator.tscn",
+    "covers": [
+      "FR-002",
+      "FR-012",
+      "SC-004"
+    ]
+  },
+  {
+    "id": "T030",
+    "owner": "adrian",
+    "story": "US3",
+    "depends_on": [
+      "T013",
+      "T026"
+    ],
+    "path": "GAME/resources/difficulties/normal.tres",
+    "covers": [
+      "FR-004",
+      "FR-013",
+      "SC-003"
+    ]
+  },
+  {
+    "id": "T031",
+    "owner": "jorge",
+    "story": "US3",
+    "depends_on": [
+      "T024",
+      "T027",
+      "T028",
+      "T029",
+      "T030"
+    ],
+    "path": "GAME/scenes/main.tscn",
+    "covers": [
+      "FR-004",
+      "FR-010",
+      "FR-011",
+      "FR-012",
+      "FR-013"
+    ]
+  },
+  {
+    "id": "T032",
+    "owner": "sojo",
+    "story": "US3",
+    "depends_on": [
+      "T031"
+    ],
+    "path": "GAME/docs/qa/difficulty-and-code.md",
+    "covers": [
+      "FR-004",
+      "FR-006",
+      "FR-011",
+      "FR-012",
+      "FR-013",
+      "SC-003",
+      "SC-004"
+    ]
+  },
+  {
+    "id": "T033",
+    "owner": "gael",
+    "story": "US4",
+    "depends_on": [
+      "T020",
+      "T021",
+      "T025"
+    ],
+    "path": "GAME/scenes/outcomes/launch.tscn",
+    "covers": [
+      "FR-014",
+      "FR-019",
+      "SC-007"
+    ]
+  },
+  {
+    "id": "T034",
+    "owner": "gael",
+    "story": "US4",
+    "depends_on": [
+      "T033"
+    ],
+    "path": "GAME/scenes/outcomes/failure.tscn",
+    "covers": [
+      "FR-014",
+      "FR-015",
+      "FR-019",
+      "SC-007"
+    ]
+  },
+  {
+    "id": "T035",
+    "owner": "adrian",
+    "story": "US4",
+    "depends_on": [
+      "T017",
+      "T030"
+    ],
+    "path": "GAME/autoload/round_controller.gd",
+    "covers": [
+      "FR-007",
+      "FR-015",
+      "FR-016",
+      "SC-007"
+    ]
+  },
+  {
+    "id": "T036",
+    "owner": "kevin",
+    "story": "US4",
+    "depends_on": [
+      "T027"
+    ],
+    "path": "GAME/scripts/modules/module_runtime.gd",
+    "covers": [
+      "FR-004",
+      "FR-016",
+      "SC-007"
+    ]
+  },
+  {
+    "id": "T037",
+    "owner": "sojo",
+    "story": "US4",
+    "depends_on": [
+      "T032",
+      "T033",
+      "T034",
+      "T035",
+      "T036"
+    ],
+    "path": "GAME/docs/qa/outcomes-and-replay.md",
+    "covers": [
+      "FR-007",
+      "FR-014",
+      "FR-015",
+      "FR-016",
+      "SC-007"
+    ]
+  },
+  {
+    "id": "T038",
+    "owner": "jorge",
+    "story": null,
+    "depends_on": [
+      "T025",
+      "T032",
+      "T037"
+    ],
+    "path": "GAME/export_presets.cfg",
+    "covers": [
+      "FR-018",
+      "FR-020",
+      "SC-006"
+    ]
+  },
+  {
+    "id": "T039",
+    "owner": "gael",
+    "story": null,
+    "depends_on": [
+      "T038"
+    ],
+    "path": "GAME/docs/qa/internet-session.md",
+    "covers": [
+      "FR-015",
+      "FR-020",
+      "SC-002",
+      "SC-005"
+    ]
+  },
+  {
+    "id": "T040",
+    "owner": "sojo",
+    "story": null,
+    "depends_on": [
+      "T038",
+      "T039"
+    ],
+    "path": "GAME/docs/qa/acceptance.md",
+    "covers": [
+      "FR-001",
+      "FR-002",
+      "FR-003",
+      "FR-004",
+      "FR-005",
+      "FR-006",
+      "FR-007",
+      "FR-008",
+      "FR-009",
+      "FR-010",
+      "FR-011",
+      "FR-012",
+      "FR-013",
+      "FR-014",
+      "FR-015",
+      "FR-016",
+      "FR-017",
+      "FR-018",
+      "FR-019",
+      "FR-020",
+      "SC-001",
+      "SC-002",
+      "SC-003",
+      "SC-004",
+      "SC-005",
+      "SC-006",
+      "SC-007"
+    ]
+  },
+  {
+    "id": "T041",
+    "owner": "kevin",
+    "story": null,
+    "depends_on": [
+      "T034"
+    ],
+    "path": "GAME/docs/art/asset-register.md",
+    "covers": [
+      "FR-019"
+    ]
+  },
+  {
+    "id": "T042",
+    "owner": "isra",
+    "story": null,
+    "depends_on": [
+      "T029",
+      "T037",
+      "T040",
+      "T041"
+    ],
+    "path": "GAME/docs/demo/README.md",
+    "covers": [
+      "FR-001",
+      "FR-010",
+      "FR-012",
+      "FR-014",
+      "FR-016",
+      "FR-020"
+    ]
+  }
+]

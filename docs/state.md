@@ -2,15 +2,21 @@
 
 Actualizado: 2026-11-14.
 
-## Nueva planificación
+## Plan vigente — Launch Control en Godot
+
+Jorge solicita Spec Kit y Godot basándose en Etapa_1_final y las tres imágenes. Paquete en `specs/001-launch-control-godot/`: especificación, plan, contratos, validación y 42 tareas, siete por integrante. El reparto no supone especialidades. Ver [plan vigente](plan-godot.md) y [ADR-0003](decisions/0003-launch-control-godot-speckit.md). La antena es el primer corte; segundo módulo/calculadora y parámetros son propuestas. No se ha implementado ni probado el juego; primero identificar su repositorio en T001. Jorge autorizó publicar todo el paquete para consulta del equipo. El historial Git y el registro de publicación distinguen preparación, publicación e integración.
+
+## Planificación anterior de Unity — histórica
 
 El usuario elige Unity y C# y dos PC conectados por Internet. Se preparó [un plan por hitos](plan-unity.md), pendiente de implementación y validación. Estas decisiones sustituyen las afirmaciones históricas siguientes sobre motor y conexión abiertos. El repositorio del juego todavía no está acordado. Próximo paso propuesto: conexión remota y prototipo orbital breve antes de la misión completa.
 
 ## Dirección
 
-Proyecto en exploración: cooperación astronauta/torre de control, puzzles durante el lanzamiento y aprendizaje sobre decisiones de misión. No hay motor, MVP o arquitectura del videojuego aprobados. Ver [visión](vision.md) y [alcance](scope.md).
+Proyecto en exploración: cooperación astronauta/torre de control, puzzles durante el lanzamiento y aprendizaje sobre decisiones de misión. El motor vigente para el prototipo es Godot; los detalles propuestos y el estado de implementación constan en el plan vigente. Ver [visión](vision.md) y [alcance](scope.md).
 
 ## Infraestructura de trabajo
+
+Spec Kit oficial 1.4.0 incorporado al paquete: nueve skills Codex y runtime `.specify/`. Se ejecutó Specify → Plan → Tasks para Launch Control; la constitución instalada sigue como plantilla sin ratificar. La instalación inicial se preparó en `jorge/instalar-speckit` y se reúne con el plan en `jorge/launch-control-godot`. Consultar el registro `docs/sessions/2026-11-14-jorge-instalacion-speckit.md`.
 
 Repositorio destino autorizado: `AESRJ/Agentes_Space_Ship`. Se creó el cuaderno [Space Ship — Memoria de creación](https://notebooklm.google.com/notebook/62c97db5-1c82-41bd-a443-2f1f98675ada).
 
@@ -21,7 +27,7 @@ Se publicaron seis perfiles Codex, instrucciones comunes, skill de memoria, adap
 - Identidad del equipo en `team/members.json`: Gael, Adrian, Kevin, Isra, Jorge y Sojo. Jorge confirmó su cuenta `AESRJ`. El primer paso de cada conversación es identificarse por nombre. Herramienta de sesión/commits etiquetados, atribución automática en checkpoints y flujo con IA documentados en `docs/team-workflow.md`. Implementado e integrado mediante [PR #3](https://github.com/AESRJ/Agentes_Space_Ship/pull/3), con atribución y CI Linux/Windows aprobados. Decisión sincronizada en NotebookLM (fuente `ece98b4e-ce5e-45bf-99eb-d991adeec8a6`); evidencias en `docs/sessions/2026-11-14-jorge-identidad-equipo.md` y el registro de publicación. Kevin confirmó su cuenta `KVSO755` (2026-11-14). Faltan las otras cuatro cuentas GitHub; no se modificaron reglas remotas.
 - Se recibió la identidad de un compañero: invitación GitHub creada con escritura y acceso NotebookLM concedido como editor. Falta aceptar la invitación GitHub y probar su incorporación. Recibir las identidades restantes para completar los accesos del equipo; los permisos se consultan en los servicios, sin duplicar correos personales en los documentos.
 - Ejecutar la incorporación interactiva en un equipo Windows y confirmar login/permisos.
-- Acordar roles jugables, primer recorrido, público y modalidad de conexión.
+- Validar el primer corte Launch Control: roles astronauta/torre y dos PC por Internet; concretar público y comprobar las propuestas de dificultad/duración.
 - Investigar un fenómeno y definir un primer puzzle con fuentes.
 - Identificar la edición y URL oficial del reto para verificar criterios.
 - Elegir después el repositorio del videojuego y registrar el traspaso.

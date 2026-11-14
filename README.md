@@ -28,6 +28,12 @@ Si falta Python o Git después de instalar, abre otra PowerShell y repite. Si Go
 
 ## Agentes
 
+### Spec Kit
+
+Integración local oficial de [GitHub Spec Kit](https://github.com/github/spec-kit/releases/tag/v1.4.0), versión 1.4.0, instalada en `.agents/skills/speckit-*` con plantillas y scripts en `.specify/`. Las nueve skills estarán disponibles en el siguiente turno de Codex al abrir esta carpeta. Primero identifícate por nombre; después puedes invocar `$speckit-specify`, `$speckit-clarify`, `$speckit-plan`, `$speckit-tasks`, `$speckit-analyze`, `$speckit-checklist`, `$speckit-constitution`, `$speckit-implement` o `$speckit-converge`.
+
+La instalación deja una plantilla de constitución sin completar: no representa decisiones aprobadas. Conserva las decisiones vigentes de `docs/` y la identificación de `AGENTS.md`; usa estas skills dentro del alcance de este repositorio. La instalación por sí sola no autoriza implementar el videojuego. Los scripts usan Python; en Windows puede usarse `python` o `py -3` donde una instrucción diga `python3`.
+
 | Perfil | Uso |
 | --- | --- |
 | coordinacion | Delimitar tareas, dependencias y alcance |
@@ -63,6 +69,23 @@ CLI de recuperación (PowerShell):
 ```
 
 Git conserva versiones verificables; NotebookLM ayuda a recuperar contexto con referencias. Las respuestas del cuaderno no aprueban propuestas ni sustituyen los documentos vigentes. Las fuentes antiguas se conservan; no hay borrado automático al llegar a límites.
+
+## Prototipo Launch Control
+
+El [plan vigente en Godot](docs/plan-godot.md) aplica Spec Kit a Etapa_1_final y sus imágenes. Consulta el [reparto de los seis integrantes](specs/001-launch-control-godot/assignments.md) y las [42 tareas ejecutables](specs/001-launch-control-godot/tasks.md). Primero se entrega una ronda con antena; después los puestos 3D, dificultad, herramienta y desenlaces. El repositorio del juego se identifica en T001; aquí se conserva la planificación.
+
+Para consultar tus tareas, actualiza tu copia desde `main` con el árbol limpio (`git switch main` y `git pull --ff-only`), abre esta carpeta en Codex y escribe:
+
+> Soy Kevin. Muéstrame mis tareas de Launch Control, sus dependencias y cuál puedo empezar. Usa el reparto existente de Spec Kit.
+
+Cambia Kevin por tu nombre. La IA debe leer el reparto y comprobar las dependencias, sin suponer que ya están terminadas. En un clon nuevo, antes de ejecutar los scripts de Spec Kit selecciona la funcionalidad:
+
+```powershell
+$env:SPECIFY_FEATURE_DIRECTORY = 'specs/001-launch-control-godot'
+python .specify/scripts/python/check_prerequisites.py --json --require-spec --require-tasks --include-tasks
+```
+
+En bash, usa `export SPECIFY_FEATURE_DIRECTORY=specs/001-launch-control-godot`. El puntero `.specify/feature.json` se mantiene local a cada clon.
 
 ## Flujo del equipo
 
