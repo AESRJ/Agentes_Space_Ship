@@ -2,6 +2,10 @@
 
 Actualizado: 2026-11-14.
 
+## Actualización — corte de antena integrado (T012/T018)
+
+El juego queda en main `29fe8ca` (PR #22) con T003–T018 integradas: lobby, roles, ronda, reloj, antena, manual y resultado compartido en la escena principal. CI de main 43688574914: 36/36 en Linux y Windows. Antes se fusionaron #20 (corrección H-04/H-05 de Gael) y #21 (T012, con la adaptación autorizada de siete pruebas de Adrian por Jorge). **Siguiente: T019 de Kevin** (Q01–Q05 con ambos roles de host). Después se liberan T020 (Gael), T022 (Isra) y T026 (Kevin). No acreditado: F5 humano, Windows con interfaz gráfica, dos PC, LAN e Internet. Detalle en `specs/001-launch-control-godot/status.md` y `docs/sessions/2026-11-14-jorge-integracion-antena.md`.
+
 ## Actualización — T003 fusionada por petición de Jorge
 
 Jorge pidió explícitamente que Codex hiciera la fusión del PR #2. GitHub confirma MERGED en `3cf3de79f9dd360013a4ed8fa41a27a81e6b7482`, cabecera `11bab3a`, CI Linux/Windows 43652062713 aprobado. Se usó squash, revisión fijada y trailers de Jorge, sin bypass ni cambio de permisos. Esta actualización sustituye el estado anterior de cambios solicitados/fusión pendiente de T003; las secciones de revisión conservan la evidencia histórica de la cabecera 105a1e7. No acredita pruebas de puestos reales o gameplay. Ver `docs/sessions/2026-11-14-jorge-fusion-t003-autorizada.md`.
