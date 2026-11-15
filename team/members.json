@@ -35,9 +35,9 @@
     {
       "id": "sojo",
       "name": "Sojo",
-      "github": null,
+      "github": "Sojito312",
       "status": "active",
-      "participation_note": "Incorporado por decisión de Jorge (2026-11-15, ADR-0005); asume T007, T008, T009, T011, T013, T017, T030 y T035. Cuenta GitHub pendiente de confirmar: sin invitación ni acceso declarado."
+      "participation_note": "Incorporado por decisión de Jorge (ADR-0005). Cuenta Sojito312 confirmada por Jorge y escritura comprobada por API en ambos repositorios el 2026-11-15. Entorno reportado por Sojo; prueba visual con dos instancias pendiente. Asume T007, T008, T009, T011, T013, T017, T030 y T035."
     }
   ]
 }

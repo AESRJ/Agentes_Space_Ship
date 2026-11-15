@@ -1,6 +1,6 @@
 # Incorporación de Sojo — relevo de Adrian
 
-Publicado con el relevo ([ADR-0005](../decisions/0005-relevo-adrian-sojo.md)); preparado por coordinación y revisado contra los scripts del repositorio. La cuenta GitHub de Sojo y su sistema operativo están pendientes de confirmación; no se inventan identificadores ni accesos. Jorge autorizó que Sojo asuma las ocho tareas y el mantenimiento de Adrian. Los commits, PR y registros de autoría anteriores se conservan.
+Publicado con el relevo ([ADR-0005](../decisions/0005-relevo-adrian-sojo.md)); preparado por coordinación y revisado contra los scripts del repositorio. La cuenta GitHub de Sojo es **Sojito312**, confirmada por Jorge y con escritura comprobada por API en ambos repositorios el 2026-11-15. El sistema operativo no está registrado; la guía conserva pasos para Windows y Linux. Jorge autorizó que Sojo asuma las ocho tareas y el mantenimiento de Adrian. Los commits, PR y registros de autoría anteriores se conservan.
 
 ## Qué recibes
 
@@ -19,7 +19,7 @@ También colaboras técnicamente con Gael en T039 (Internet), cuyo dueño sigue 
 
 ## 1. Accesos previos
 
-1. Da a Jorge tu usuario GitHub exacto. Jorge debe registrar esa cuenta y comprobar/invitar escritura en **AESRJ/Agentes_Space_Ship** y **AESRJ/LaunchControlGodot**. Acepta las invitaciones con tu cuenta; si el repositorio privado da 404, revisa esto antes de instalar.
+1. Usa tu cuenta **Sojito312**: ya tiene escritura comprobada en **AESRJ/Agentes_Space_Ship** y **AESRJ/LaunchControlGodot**. No hace falta otra invitación. Si un clon da 404, verifica con qué cuenta estás autenticado.
 2. Cada persona usa su propia cuenta y autenticación. No recibir tokens, cookies o llaves de otro integrante.
 3. El acceso al cuaderno [Space Ship](https://notebooklm.google.com/notebook/62c97db5-1c82-41bd-a443-2f1f98675ada) se comparte por separado con tu cuenta Google. Es opcional para arrancar el juego: si falla memoria, trabaja con Git y registra el pendiente, sin borrar fuentes del equipo.
 4. Ten disponible la herramienta de IA que vayas a usar y tu editor. El juego no requiere C#, .NET ni una API key compartida. No es necesario contratar otra herramienta de IA para compilarlo.
@@ -150,7 +150,7 @@ Lee T030, `spec.md`, `data-model.md`, `contracts/session.md`, `autoload/session_
 
 T030 debe conectar fácil con una antena y normal con antena+código, rechazando cambios durante la ronda. El controlador del baseline solo registra antena y fácil; coordina el registro de la regla de código y las definiciones necesarias. Normal no debe ganar al resolver un solo módulo. Registra parámetros propuestos como tales y prueba ambas modalidades con host torre y astronauta. No hagas por tu cuenta T028/T029 de Isra ni T031 de Jorge.
 
-No escribas el estado de Kevin como aceptado: T019 mantiene una incidencia GUI en el informe vigente, aunque T013 y T026 ya están integradas y permiten preparar la configuración de T030. T035 espera T030 y trata ronda nueva, limpieza de readiness/estado/comandos antiguos y reloj nuevo; no se implementa con un simple botón que oculta el resultado.
+**T030 está técnicamente liberada** para Sojo con T013/T026 integradas, sin cambiar la dependencia histórica T026→T019 ni dar por aceptada T019. No escribas el estado de Kevin como aceptado: conserva una incidencia GUI pendiente. Consulta [autorización y alcance de inicio T030](t030-inicio-sojo.md). T035 espera T030 y trata ronda nueva, limpieza de readiness/estado/comandos antiguos y reloj nuevo; no se implementa con un simple botón que oculta el resultado.
 
 ## 6. Publicar cambios con tu nombre
 
@@ -182,3 +182,7 @@ No fuerces pushes ni subas `.godot/`, `.venv/`, sesiones locales, tokens, cookie
 - NotebookLM accesible o pendiente explícito, sin bloquear el desarrollo con Git.
 
 Esta guía no se ha ejecutado en el PC de Sojo: sus comandos se revisaron contra `tools/` del juego y `scripts/` de agentes. Comunica a Jorge o al coordinador cualquier paso que falle en tu sistema.
+
+## Entorno reportado por Sojo (2026-11-15)
+
+Sojo comunicó dos clones preparados, Godot4.7.2 instalado, comprobador OK, harness21/21 e integración43/43. Es evidencia reportada por el integrante, no una ejecución independiente en su PC por coordinación. Acceso a ambos repositorios sí verificado por API. Falta la prueba visual con dos instancias y ambos roles de host; puede comenzar T030 y debe registrar esa comprobación antes de declarar su entorno visual validado. Su correo de commits se configura localmente; no se incorpora al registro compartido.

@@ -369,7 +369,9 @@
     "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/16",
     "merged_commit": "adae9b33604b611f2aee12e9876d4a52b8630bb0",
-    "redesign_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32"
+    "redesign_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_commit": "a5ecf97ac84acc61900778f20dc161ccfb909711"
   },
   {
     "id": "T021",
@@ -386,7 +388,9 @@
     "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/17",
     "merged_commit": "46e07e4faf959a8709ea43a49cc8fa65539f09b8",
-    "redesign_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32"
+    "redesign_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_commit": "a5ecf97ac84acc61900778f20dc161ccfb909711"
   },
   {
     "id": "T022",
@@ -511,8 +515,9 @@
       "FR-011",
       "FR-019"
     ],
-    "readiness": "ready_to_start",
-    "open_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/33"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/33",
+    "merged_commit": "e54858e8912061755d9d39584178cd49097ea55f"
   },
   {
     "id": "T029",
@@ -527,8 +532,9 @@
       "FR-012",
       "SC-004"
     ],
-    "readiness": "waiting_for_dependencies",
-    "open_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/33"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/33",
+    "merged_commit": "e54858e8912061755d9d39584178cd49097ea55f"
   },
   {
     "id": "T030",
@@ -545,7 +551,8 @@
       "SC-003"
     ],
     "readiness": "ready_to_start",
-    "previous_owner": "adrian"
+    "previous_owner": "adrian",
+    "release_note": "Inicio técnico autorizado por coordinación de Jorge sobre T013/T026 integradas; no equivale a aceptación de T019. Ver docs/setup/t030-inicio-sojo.md."
   },
   {
     "id": "T031",
@@ -709,7 +716,8 @@
       "SC-002",
       "SC-005"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "waiting_for_dependencies",
+    "technical_support": "sojo"
   },
   {
     "id": "T040",

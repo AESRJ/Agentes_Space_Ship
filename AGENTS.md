@@ -14,7 +14,7 @@ Git conserva decisiones y evidencia versionada; NotebookLM es la memoria consult
 
 ## Alcance y evidencia
 
-Desde el 2026-11-15 (ADR-0005), Sojo es activo y asume las ocho tareas de Adrian (T007, T008, T009, T011, T013, T017, T030 y T035) y su apoyo técnico en T039. Adrian queda `inactive` y conserva su autoría e historial. Reparto actual: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8; no uses repartos anteriores. La cuenta GitHub de Sojo está pendiente: no la infieras por su nombre ni declares su acceso. Guía de incorporación: `docs/setup/sojo.md`.
+Desde el 2026-11-15 (ADR-0005), Sojo es activo y asume las ocho tareas de Adrian (T007, T008, T009, T011, T013, T017, T030 y T035) y su apoyo técnico en T039. Adrian queda `inactive` y conserva su autoría e historial. Reparto actual: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8; no uses repartos anteriores. Sojo corresponde a Sojito312, confirmado por Jorge y con escritura comprobada en ambos repositorios el 2026-11-15. Su entorno y prueba visual se registran por separado; no inferir otras identidades. Guía de incorporación: `docs/setup/sojo.md`.
 
 - Se ha autorizado montar este sistema de agentes y memoria. El diseño del juego sigue en exploración.
 - Distingue propuesta, decisión aceptada por una persona, implementación y verificación. Una decisión aceptada indica quién la aprobó y dónde consta; no inventes aprobación.

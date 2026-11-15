@@ -18,3 +18,7 @@ Jorge pide cambiar al integrante responsable: **todas las tareas de Adrian pasan
 - La cuenta GitHub y el sistema operativo de Sojo están **pendientes**. Sin cuenta confirmada no se le invita ni se declara su acceso, y no se infiere su cuenta por el nombre.
 - Sustituye, para el reparto vigente, la parte de ADR-0004 según la cual Sojo no estaba incorporado. ADR-0004 y los anteriores se conservan como historia.
 - Guía de incorporación: `docs/setup/sojo.md`.
+
+## Confirmación posterior — 2026-11-15
+
+Jorge comunicó la cuenta **Sojito312**; coordinación comprobó escritura en los dos repositorios. Este dato sustituye el pendiente inicial de GitHub, conservado arriba como contexto de la decisión. Sojo reportó su entorno preparado; la prueba visual propia sigue pendiente. El inicio técnico de T030 sobre T013/T026 integradas se precisa en [t030-inicio-sojo.md](../setup/t030-inicio-sojo.md), sin aceptar T019 ni cambiar su responsable.

@@ -1,16 +1,16 @@
 # Estado operativo — Launch Control
 
-Actualizado: 2026-11-14 (tras #22). No sustituye criterios de aceptación ni declara terminado el juego.
+Actualizado: 2026-11-15 (confirmación de Sojo y estados #32/#33). No sustituye criterios de aceptación ni declara terminado el juego.
 
 ## Estado vigente — relevo de Adrian por Sojo (2026-11-15)
 
-**Decisión de Jorge ([ADR-0005](../../docs/decisions/0005-relevo-adrian-sojo.md)):** Sojo asume T007, T008, T009, T011, T013, T017, T030 y T035, más el apoyo técnico en T039 (dueño: Gael). Adrian queda inactivo y conserva la autoría de lo que implementó. Reparto: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8. La cuenta GitHub de Sojo está **pendiente**: sin invitación ni acceso declarado. Guía: [docs/setup/sojo.md](../../docs/setup/sojo.md).
+**Decisión de Jorge ([ADR-0005](../../docs/decisions/0005-relevo-adrian-sojo.md)):** Sojo asume T007, T008, T009, T011, T013, T017, T030 y T035, más el apoyo técnico en T039 (dueño: Gael). Adrian queda inactivo y conserva la autoría de lo que implementó. Reparto: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8. Sojo usa **Sojito312**, confirmado por Jorge y con escritura comprobada por API en ambos repositorios. Su reporte de entorno no sustituye la prueba visual propia, todavía pendiente. Guía: [docs/setup/sojo.md](../../docs/setup/sojo.md).
 
-Juego: main `11d649b396ef6ec8c9f41bc54b24f40cb52d49d0`, CI 43743111583 (integración 43/43 y harness 21/21 en Linux y Windows). Entregas integradas desde el estado anterior:
+Juego comprobado: main `5892dd056760dcb1ede7db6e892895c577c524f8`. T024 está publicada en PR #37, sin fusionar al registrar. Entregas integradas desde el estado anterior:
 
 | Entrega | PR | Commit | Nota |
 | --- | --- | --- | --- |
-| T020 cabina (Gael) | #16 | `adae9b3` | el rediseño de T020/T021 está en el #32 (abierto) |
+| T020 cabina (Gael) | #16 | `adae9b3` | rediseño #32 integrado en `a5ecf97` |
 | T021 oficina (Gael) | #17 | `46e07e4` | — |
 | T019 evidencia de QA (Kevin) | #24 | `d02f979` | **no aceptada**: queda una incidencia del runner GUI y repetir Q05 |
 | Issue #23: interrupción visible (Jorge) | #25 | `36a0efc` | relacionado con Q05; el issue sigue abierto |
@@ -19,19 +19,21 @@ Juego: main `11d649b396ef6ec8c9f41bc54b24f40cb52d49d0`, CI 43743111583 (integrac
 | T036 reinicio de módulos (Kevin) | #28 | `b548759` | no implica revancha (T035) |
 | README de escenas (Gael) | #31 | `961d642` | — |
 | T022/T023 manual y HUD (Isra) | #34 | `11d649b` | — |
+| T028/T029 página de código y calculadora (Isra) | #33 | `e54858e` | integradas, sin aceptar T019 |
+| Rediseño de T020/T021 (Gael) | #32 | `a5ecf97` | integrado |
 
-Abiertos (no se fusionan por este relevo): #32 (rediseño de T020/T021), #33 (T028/T029 de Isra), borradores #29/#30 (T033/T034). PR #8 de agentes, fuera de alcance.
+Abiertos al registrar: T024 #37 y borradores #29/#30 (T033/T034). #32 y #33 están fusionados. PR #8 de agentes queda fuera de alcance.
 
 | Persona | Siguiente | Dependencia real |
 | --- | --- | --- |
 | **Sojo** | **T030**: fácil = [antenna], normal = [antenna, code]; sin cambios durante la ronda; normal no gana con un solo módulo | T013 y T026 integradas. Base actual: `RULE_SCRIPTS` solo `antenna` y `difficulty_modules` solo `easy` |
 | Sojo | T035: revancha y ronda limpia | T017 y **T030** |
 | Kevin | T019: aceptar Q01–Q05 (incidencia del runner GUI, repetir Q05) | — |
-| Isra | T028/T029 en revisión (#33) | T022 y T026 integradas |
-| Jorge | T024 integración de puestos | T020–T023 integradas; los puestos finales dependen del #32 |
-| Gael | #32 y, después, T025 | T024 |
+| Isra | T032 después de T031; T028/T029 ya integradas (#33) | T031 pendiente |
+| Jorge | T024 en revisión (#37) | T020–T023 y rediseño #32 integrados |
+| Gael | T025; #32 ya integrado | T024 integrada y disponible para QA |
 
-Las seis tareas que implementó Adrian se mantienen, no se reimplementan. La disponibilidad por dependencias no equivale a aceptar T019.
+Las seis tareas que implementó Adrian se mantienen, no se reimplementan. **T030 está técnicamente liberada para Sojo** sobre T013/T026 integradas; esto no equivale a aceptar T019 ni cambiar su responsable. [Decisión y alcance](../../docs/setup/t030-inicio-sojo.md).
 
 ## Estado anterior — corte de antena integrado (2026-11-14)
 
