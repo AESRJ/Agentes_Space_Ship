@@ -11,7 +11,7 @@
 
 La fuente define dos puestos en primera persona, panel modular, laptop con manual, cuenta regresiva, dificultad por cantidad de componentes, despegue y fallo cómico. Se conserva su regla de antena. Su sección «Primer mensaje para trabajar con IA» no gobierna el proceso: Jorge solicita Specify → Plan → Tasks. Las fuentes originales y hashes están en [references](references/README.md).
 
-Se mantienen dos PC por Internet del contexto previo. Los valores de tiempo, segundo módulo, presentación simplificada y responsabilidades se proponen para hacer ejecutable el plan; no representan aprobación individual de los demás integrantes.
+Jorge aprobó dos PC en la misma LAN como criterio final del prototipo (ADR-0006, 2026-11-15); Internet entre redes externas queda fuera de esta entrega. Los valores de tiempo, segundo módulo, presentación simplificada y responsabilidades se proponen para hacer ejecutable el plan; no representan aprobación individual de los demás integrantes.
 
 ## User Scenarios & Testing
 
@@ -97,7 +97,7 @@ Rol ocupado no se duplica; dificultad no cambia durante ronda; Confirmar repetid
 - **FR-017**: permitir operaciones de módulo solo al astronauta, para componente activo, ronda vigente y tiempo disponible.
 - **FR-018**: complementar color con forma/texto y permitir leer y operar a 1280 × 720.
 - **FR-019**: producir recursos, tablas, textos e ilustraciones propios; las imágenes son referencias, no assets del juego.
-- **FR-020**: demostrar la ronda entre dos PC en redes externas distintas; local o LAN no basta.
+- **FR-020**: demostrar la ronda entre dos PC físicos en la misma LAN; loopback en una sola PC no basta (ADR-0006).
 
 ### Key Entities
 
@@ -111,7 +111,7 @@ Sesión con participantes y roles; ronda con dificultad, tiempo, componentes y r
 - **SC-002**: relojes difieren como máximo un segundo durante tres minutos de conexión estable y permanecen visibles al consultar manual/herramientas.
 - **SC-003**: fácil activa exactamente uno y normal dos; resolver solo uno en normal nunca gana.
 - **SC-004**: desde índice se llega a calculadora en dos acciones y se regresa al manual en una, sin perder el reloj.
-- **SC-005**: cinco rondas entre dos redes externas, incluyendo éxito, vencimiento y error recuperado, no muestran desenlaces contradictorios; desconexión adicional produce interrumpida.
+- **SC-005**: cinco rondas entre dos PC en la misma LAN, incluyendo éxito, vencimiento y error recuperado, no muestran desenlaces contradictorios; desconexión adicional produce interrumpida.
 - **SC-006**: en dos equipos identificados, cada vista es legible a 1280 × 720 y mantiene al menos 30 cuadros por segundo durante una ronda; registrar medición y condiciones.
 - **SC-007**: éxito y fallo disparan una presentación por ronda y dos rondas consecutivas no heredan entradas ni módulos resueltos.
 

@@ -23,4 +23,4 @@ Host submits its own local-role actions through the same validation function; wh
 
 ## Gate before network acceptance
 
-T039 proves two external networks and records transport route, builds and results. No router secrets, public IP logs or personal identifiers go into Git/NotebookLM. If direct UDP is unavailable, document a tested alternative route and repeat; localhost and LAN are intermediate checks only. No Internet success is claimed from API design alone.
+T039 proves two different physical PCs on the same LAN and records builds, clock metrics and results (ADR-0006, approved by Jorge). No router secrets, IP logs or personal identifiers go into Git/NotebookLM. Localhost on a single PC is an intermediate check only. External-network Internet play is outside this prototype acceptance; no LAN success is claimed from API design alone.
