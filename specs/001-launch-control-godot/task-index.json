@@ -347,10 +347,10 @@
       "FR-017",
       "SC-001"
     ],
-    "readiness": "qa_evidence_merged_not_accepted",
-    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/24",
-    "merged_commit": "d02f979eb0cea45a24181e426f464f4ab77451de",
-    "note": "Issue #23 corregido en #25; runner GUI actualizado y verificado en #37 d4cbdb3. Kevin debe repetir Q01–Q05 y registrar aceptación; sigue no aceptada."
+    "readiness": "accepted",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/43",
+    "merged_commit": "74a9c0e",
+    "note": "Kevin aceptó Q01–Q05; issue #23 cerrado."
   },
   {
     "id": "T020",
@@ -466,8 +466,10 @@
       "SC-002",
       "SC-006"
     ],
-    "readiness": "ready_to_start",
-    "note": "T024 integrada en #37 d4cbdb3. Ejecutar Q06–Q07; no aceptada por las pruebas de integración."
+    "readiness": "accepted_with_followups",
+    "note": "Gael declaró completada T025; F5 humano/segundo equipo son seguimientos, no bloqueos.",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/47",
+    "merged_commit": "cf79aab"
   },
   {
     "id": "T026",
@@ -554,9 +556,12 @@
       "FR-013",
       "SC-003"
     ],
-    "readiness": "ready_to_start",
+    "readiness": "merged",
     "previous_owner": "adrian",
-    "release_note": "Inicio técnico autorizado por coordinación de Jorge sobre T013/T026 integradas; no equivale a aceptación de T019. Ver docs/setup/t030-inicio-sojo.md."
+    "release_note": "Inicio técnico autorizado por coordinación de Jorge sobre T013/T026 integradas; no equivale a aceptación de T019. Ver docs/setup/t030-inicio-sojo.md.",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/44",
+    "merged_commit": "404fc5a",
+    "note": "Dificultades fácil/normal integradas; libera T031."
   },
   {
     "id": "T031",
@@ -577,8 +582,10 @@
       "FR-012",
       "FR-013"
     ],
-    "readiness": "waiting_for_dependencies",
-    "note": "T024/T027/T028/T029 integradas; falta T030 de Sojo. No iniciar la integración sin esa entrega."
+    "readiness": "merged",
+    "note": "Codex verificó main con 100/100 y 21/21, GUI con ambos roles. T032 tiene evidencia posterior.",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/50",
+    "merged_commit": "76e880f"
   },
   {
     "id": "T032",
@@ -597,7 +604,10 @@
       "SC-003",
       "SC-004"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "accepted",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/51",
+    "merged_commit": "976bc8c",
+    "note": "Informe Q08–Q10 de Isra integrado: Windows 100/0 y GUI sintética 4/4; no Internet."
   },
   {
     "id": "T033",
@@ -653,8 +663,11 @@
       "FR-016",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies",
-    "previous_owner": "adrian"
+    "readiness": "backend_merged_pending_ui",
+    "previous_owner": "adrian",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/49",
+    "merged_commit": "3222c3f",
+    "note": "API de revancha integrada; falta botón Otra ronda en composición de Jorge antes de T037."
   },
   {
     "id": "T036",
@@ -692,7 +705,8 @@
       "FR-016",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "waiting_for_replay_ui_and_outcome_acceptance",
+    "note": "T032 aceptada y backend T035 integrado. Falta composición de revancha; conexión de desenlaces propuesta en PR53 de Gael. No aceptar Q11–Q12 antes de ejecutar."
   },
   {
     "id": "T038",
@@ -709,7 +723,8 @@
       "FR-020",
       "SC-006"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "waiting_for_dependencies",
+    "note": "T025 y T032 aceptadas; sigue esperando T037. No iniciar builds finales antes de esa evidencia."
   },
   {
     "id": "T039",
@@ -779,7 +794,10 @@
     "covers": [
       "FR-019"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "register_merged_pending_final_assets",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/46",
+    "merged_commit": "e724953",
+    "note": "Registro publicado; revisión final tras aceptación de desenlaces y antes de exportación."
   },
   {
     "id": "T042",

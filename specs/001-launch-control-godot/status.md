@@ -1,5 +1,23 @@
 # Estado operativo — Launch Control
 
+## Corte vigente — 2026-11-15: T032 aceptada y cierre de integración
+
+Juego comprobado: `76e880f` (T031) y `976bc8c` (informe T032). Documentación de hackathon integrada en #45 `a8d4864`; no es una presentación gráfica, video ni envío al portal. T019 aceptada (#43); T025 cerrada por Gael (#47, seguimientos no bloqueantes); T030 integrada (#44); T031 integrada (#50); T032 validada por Isra (#51). La casilla de T032 se actualizó en el juego mediante #52. T035 aporta la API de revancha (#49); falta conectarla en main. T041 tiene registro (#46) con cierre de recursos finales pendiente.
+
+Codex verificó T031 sobre main combinado con T035: integración 100/100, harness 21/21 y GUI normal con ambos roles. Isra documentó Windows 100/0 y GUI sintética 4/4 para Q08–Q10. Esto no acredita dos equipos ni Internet.
+
+| Persona | Siguiente paso real |
+| --- | --- |
+| Jorge | Componer botón Otra ronda con la API T035, conservando desenlaces y salida; después T038 espera T037 |
+| Gael | Conexión de desenlaces propuesta en PR #53; ejecutar T037 tras la composición de revancha; T039 después de T038 |
+| Sojo | Backend T035 integrado; apoyar incidencias propias de sesión/revancha y después T039 con Gael |
+| Kevin | Registro T041 publicado; revisar recursos finales antes de exportar |
+| Isra | T032 aceptada; T042 espera T037/T040 y cierre de recursos |
+
+No se reasignan IDs ni se acepta QA ajena. El próximo encargo de Jorge/Claude es cerrar su composición de revancha para liberar la ejecución de T037 por Gael, no sustituir esa validación. Se conservan la comprobación humana, segundo equipo, Windows gráfico, redes externas y H-14 (ventanas menores de 1280×720) según su evidencia real. NotebookLM sigue pendiente; escribir este registro no acredita sincronización.
+
+## Historial anterior (sustituido donde difiera)
+
 Actualizado: 2026-11-15 (T024 integrada y liberación de T025). No sustituye criterios de aceptación ni declara terminado el juego.
 
 ## Estado vigente — relevo de Adrian por Sojo (2026-11-15)

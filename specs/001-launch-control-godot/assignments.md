@@ -4,11 +4,11 @@
 
 | Integrante | Responsabilidad | Tareas | Primer paso disponible |
 | --- | --- | --- | --- |
-| Jorge | Base, composición e integración; validación inicial y aceptación final | T001, T002, T003, T012, T018, T024, T031, T038, T040 | T024 integrada (#37); siguiente T031, pendiente T030 de Sojo, con T027–T029 integradas (T001/T002 con seguimiento; T003, T012 y T018 integradas) |
-| Gael | Escenas 3D, animaciones y verificación visual/desenlaces | T004, T015, T020, T021, T025, T033, T034, T037, T039 | T025 liberada: T024 integrada (#37); verificar legibilidad y rendimiento |
-| Sojo | Red, roles, estado y reloj; verificación del contrato (relevo de Adrian) | T007, T008, T009, T011, T013, T017, T030, T035 | **T030** (T013 y T026 integradas). T007–T009, T011, T013 y T017 las implementó Adrian y están integradas: Sojo las mantiene. Guía: `docs/setup/sojo.md` |
-| Kevin | Módulos y reglas; verificación de la antena | T005, T010, T014, T019, T026, T027, T036, T041 | Aceptar T019; T026/T027/T036 ya integradas; T041 espera T034 |
-| Isra | Manual, interfaz y calculadora; verificación de dificultad | T006, T016, T022, T023, T028, T029, T032, T042 | T032 después de T031 (T022/T023 y T028/T029 integradas) |
+| Jorge | Base, composición e integración; validación inicial y aceptación final | T001, T002, T003, T012, T018, T024, T031, T038, T040 | T031 integrada (#50); componer revancha con API T035; T038 espera T037 (T025/T032 aceptadas) |
+| Gael | Escenas 3D, animaciones y verificación visual/desenlaces | T004, T015, T020, T021, T025, T033, T034, T037, T039 | T025 completada con seguimientos (#47); conectar desenlaces (#53) y validar T037 tras el botón de revancha |
+| Sojo | Red, roles, estado y reloj; verificación del contrato (relevo de Adrian) | T007, T008, T009, T011, T013, T017, T030, T035 | **T030 y backend T035 integrados** (#44/#49); apoyar revancha y T039.  T007–T009, T011, T013 y T017 las implementó Adrian y están integradas: Sojo las mantiene. Guía: `docs/setup/sojo.md` |
+| Kevin | Módulos y reglas; verificación de la antena | T005, T010, T014, T019, T026, T027, T036, T041 | T019 aceptada; T041 registro publicado (#46), revisar recursos finales tras desenlaces |
+| Isra | Manual, interfaz y calculadora; verificación de dificultad | T006, T016, T022, T023, T028, T029, T032, T042 | T032 aceptada (#51); preparar T042 conforme a T037/T040/T041 |
 
 La copia de tasks.md define rutas, dependencias y aceptación. La base técnica se verifica y publica en AESRJ/LaunchControlGodot; su guía docs/setup/team-readiness.md indica cuándo se liberan estas tareas. Sojo usa Sojito312 y tiene escritura comprobada en ambos repositorios. T030 está técnicamente liberada sobre T013/T026, manteniendo la aceptación de T019 pendiente de Kevin; ver [inicio T030](../../docs/setup/t030-inicio-sojo.md). La prueba personal de Windows y las pruebas de juego no se declaran realizadas por haber pasado CI.
 
