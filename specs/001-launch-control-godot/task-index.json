@@ -554,9 +554,10 @@
       "FR-013",
       "SC-003"
     ],
-    "readiness": "ready_to_start",
+    "readiness": "merged",
     "previous_owner": "adrian",
-    "release_note": "Inicio técnico autorizado por coordinación de Jorge sobre T013/T026 integradas; no equivale a aceptación de T019. Ver docs/setup/t030-inicio-sojo.md."
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/44",
+    "merged_commit": "404fc5afc7fe68eb0a18e8a88983a166144d66e6"
   },
   {
     "id": "T031",
@@ -653,8 +654,9 @@
       "FR-016",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies",
-    "previous_owner": "adrian"
+    "readiness": "pr_open_not_merged",
+    "previous_owner": "adrian",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/49"
   },
   {
     "id": "T036",

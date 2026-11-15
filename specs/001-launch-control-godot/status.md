@@ -2,6 +2,10 @@
 
 Actualizado: 2026-11-15 (T024 integrada y liberación de T025). No sustituye criterios de aceptación ni declara terminado el juego.
 
+## Actualización — T030 integrada y T035 en revisión (Sojo, 2026-11-15)
+
+T030 se fusionó en el juego mediante [PR #44](https://github.com/AESRJ/LaunchControlGodot/pull/44) (`404fc5a`), lo que libera T035 (dependencias T017 y T030 integradas). T035 está implementada en la rama `sojo/t035-revancha` sobre main `cf79aab`; Sojo revisó el diff y abrió el [PR #49](https://github.com/AESRJ/LaunchControlGodot/pull/49), sin fusionar. Evidencia local y límites: `docs/qa/t035-revancha.md` en esa rama. T037 y T039 siguen pendientes.
+
 ## Estado vigente — relevo de Adrian por Sojo (2026-11-15)
 
 **Decisión de Jorge ([ADR-0005](../../docs/decisions/0005-relevo-adrian-sojo.md)):** Sojo asume T007, T008, T009, T011, T013, T017, T030 y T035, más el apoyo técnico en T039 (dueño: Gael). Adrian queda inactivo y conserva la autoría de lo que implementó. Reparto: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8. Sojo usa **Sojito312**, confirmado por Jorge y con escritura comprobada por API en ambos repositorios. Su reporte de entorno no sustituye la prueba visual propia, todavía pendiente. Guía: [docs/setup/sojo.md](../../docs/setup/sojo.md).
@@ -26,8 +30,8 @@ T024 #37 fusionada en `d4cbdb3`. #29 (T033, `15b0e90`) y #39 (T034, `ab197bf`) s
 
 | Persona | Siguiente | Dependencia real |
 | --- | --- | --- |
-| **Sojo** | **T030**: fácil = [antenna], normal = [antenna, code]; sin cambios durante la ronda; normal no gana con un solo módulo | T013 y T026 integradas. Base actual: `RULE_SCRIPTS` solo `antenna` y `difficulty_modules` solo `easy` |
-| Sojo | T035: revancha y ronda limpia | T017 y **T030** |
+| Sojo | T030 integrada: fácil = [antenna], normal = [antenna, code] | [#44](https://github.com/AESRJ/LaunchControlGodot/pull/44) `404fc5a` |
+| **Sojo** | **T035**: revancha y ronda limpia, PR [#49](https://github.com/AESRJ/LaunchControlGodot/pull/49) abierto, sin fusionar | T017 y T030 integradas. No acredita Q11–Q12 (T037, Gael) ni Internet (T039) |
 | Kevin | T019: repetir y aceptar Q01–Q05 con el runner actualizado en #37 | — |
 | Isra | T032 después de T031; T028/T029 ya integradas (#33) | T031 pendiente |
 | Jorge | T031: integración de dificultad y segundo módulo | T030 de Sojo pendiente; T024 y T027–T029 integradas |
