@@ -11,7 +11,8 @@
       "id": "adrian",
       "name": "Adrian",
       "github": "adrianbalderas373488",
-      "status": "active"
+      "status": "inactive",
+      "participation_note": "Relevado por Sojo por decisión de Jorge (2026-11-15, ADR-0005). Autor original de T007, T008, T009, T011, T013 y T017; conserva historial y cuenta. No se revocan permisos."
     },
     {
       "id": "kevin",
@@ -34,9 +35,9 @@
     {
       "id": "sojo",
       "name": "Sojo",
-      "github": null,
-      "status": "pending",
-      "participation_note": "No incorporado por instrucción de Jorge, 2026-11-14; sin tareas activas."
+      "github": "Sojito312",
+      "status": "active",
+      "participation_note": "Incorporado por decisión de Jorge (ADR-0005). Cuenta Sojito312 confirmada por Jorge y escritura comprobada por API en ambos repositorios el 2026-11-15. Entorno reportado por Sojo; prueba visual con dos instancias pendiente. Asume T007, T008, T009, T011, T013, T017, T030 y T035."
     }
   ]
 }

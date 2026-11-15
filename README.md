@@ -1,6 +1,6 @@
 # Agentes Space Ship
 
-Centro de agentes, investigación, diseño y memoria para cinco integrantes activos. Sojo no está incorporado por ahora. El videojuego tiene su repositorio separado en https://github.com/AESRJ/LaunchControlGodot. Aquí empezamos por nutrir y validar la idea.
+Centro de agentes, investigación, diseño y memoria para cinco integrantes activos: Jorge, Gael, Sojo, Kevin e Isra. Sojo relevó a Adrian el 2026-11-15 ([ADR-0005](docs/decisions/0005-relevo-adrian-sojo.md); guía en [docs/setup/sojo.md](docs/setup/sojo.md)). El videojuego tiene su repositorio separado en https://github.com/AESRJ/LaunchControlGodot. Aquí empezamos por nutrir y validar la idea.
 
 ## Incorporación desde Windows
 
@@ -89,7 +89,7 @@ En bash, usa `export SPECIFY_FEATURE_DIRECTORY=specs/001-launch-control-godot`. 
 
 ## Flujo del equipo
 
-Para identificarte, crear tu rama y etiquetar cada commit, sigue [identidad y metodología con IA](docs/team-workflow.md). El primer paso de cada conversación es decir tu nombre: Gael, Adrian, Kevin, Isra o Jorge. La IA lo pregunta si falta; una sesión anterior no sustituye esta identificación. Los perfiles de agentes son compartidos y distintos de los integrantes humanos.
+Para identificarte, crear tu rama y etiquetar cada commit, sigue [identidad y metodología con IA](docs/team-workflow.md). El primer paso de cada conversación es decir tu nombre: Gael, Sojo, Kevin, Isra o Jorge. La IA lo pregunta si falta; una sesión anterior no sustituye esta identificación. Los perfiles de agentes son compartidos y distintos de los integrantes humanos.
 
 1. Actualizar main sin cambios locales y crear rama por tarea.
 2. Leer [visión](docs/vision.md), [alcance](docs/scope.md), [estado](docs/state.md) y consultar NotebookLM.

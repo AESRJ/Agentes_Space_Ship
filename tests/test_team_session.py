@@ -16,7 +16,8 @@ class TeamSessionTests(unittest.TestCase):
         self.addCleanup(temp.cleanup)
         self.root = Path(temp.name)
         (self.root / 'team').mkdir()
-        shutil.copyfile(team.ROOT / 'team/members.json', self.root / 'team/members.json')
+        # Registro de prueba explícito: no depende de quién esté activo hoy en el registro real.
+        self.write_roster()
         (self.root / '.gitignore').write_text(team.SESSION + '\n', encoding='utf-8')
         self.git('init', '-b', 'main')
         self.git('config', 'user.name', 'Original User')
@@ -24,6 +25,15 @@ class TeamSessionTests(unittest.TestCase):
         self.git('add', '.')
         self.git('commit', '-m', 'Historical bootstrap')
         self.base = self.git('rev-parse', 'HEAD')
+
+    ROSTER = {'gael': 'active', 'adrian': 'inactive', 'kevin': 'active',
+              'isra': 'active', 'jorge': 'active', 'sojo': 'active'}
+
+    def write_roster(self, **overrides):
+        statuses = dict(self.ROSTER, **overrides)
+        entries = [{'id': i, 'name': i.capitalize(), 'github': None, 'status': st} for i, st in statuses.items()]
+        (self.root / 'team/members.json').write_text(
+            json.dumps({'schema_version': 1, 'members': entries}), encoding='utf-8')
 
     def git(self, *args):
         return team.git(*args, root=self.root)
@@ -58,8 +68,10 @@ class TeamSessionTests(unittest.TestCase):
             team.commit('wrong branch', root=self.root)
 
     def test_rejects_pending_person_dirty_tree_and_invalid_task(self):
+        self.write_roster(sojo='pending')
         with self.assertRaises(ValueError):
             self.begin('sojo')
+        self.write_roster()
         with self.assertRaises(ValueError):
             team.start('gael', '../unsafe', 'gael@example.test', self.root)
         self.stage()
@@ -126,6 +138,37 @@ class TeamSessionTests(unittest.TestCase):
         self.git('commit', '-m', '[gael] duplicate\n\nTeam-Member: gael\nTeam-Member: jorge\nAI-Assisted: true')
         with self.assertRaises(ValueError):
             team.check(self.base, root=self.root)
+
+
+    def test_registry_accepts_inactive_and_rejects_unknown_status(self):
+        roster = team.members(self.root)
+        self.assertEqual(roster['adrian']['status'], 'inactive')
+        self.write_roster(adrian='retired')
+        with self.assertRaises(ValueError):
+            team.members(self.root)
+
+    def test_inactive_member_cannot_start_session_or_sign_commits(self):
+        with self.assertRaises(ValueError):
+            self.begin('adrian')
+        self.assertEqual(self.git('branch', '--show-current'), 'main')
+        self.stage()
+        self.git('commit', '-m', '[adrian] cambio nuevo\n\nTeam-Member: adrian\nAI-Assisted: true')
+        with self.assertRaises(ValueError):
+            team.check(self.base, root=self.root)
+
+    def test_active_sojo_starts_session_and_commits_with_own_identity(self):
+        info = self.begin('sojo')
+        self.assertEqual(info['branch'], 'sojo/tarea-001')
+        self.stage()
+        team.commit('incorporación', root=self.root)
+        self.assertEqual(self.git('show', '-s', '--format=%an <%ae>'), 'Sojo <sojo@example.test>')
+        self.assertEqual(self.git('show', '-s', '--format=%s'), '[sojo] incorporación')
+        self.assertIn('1 commits', team.check(self.base, root=self.root))
+
+    def test_real_registry_is_valid(self):
+        roster = team.members()
+        self.assertEqual(len(roster), 6)
+        self.assertTrue(all(m['status'] in ('active', 'pending', 'inactive') for m in roster.values()))
 
 
 if __name__ == '__main__':

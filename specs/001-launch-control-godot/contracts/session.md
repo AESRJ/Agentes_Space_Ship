@@ -1,6 +1,6 @@
 # Contract v1 — Session, clock and authority
 
-Proposed owner Adrian; Jorge owns composition. This interface must be implemented identically in both role builds. Match NodePath under the shared autoload SessionService, RPC declarations and serialized fields. Specific Godot annotations are selected in T007, validated in T011, not scattered in scene scripts.
+Owner: Sojo since 2026-11-15 (original implementation by Adrian, ADR-0005); Jorge owns composition. This interface must be implemented identically in both role builds. Match NodePath under the shared autoload SessionService, RPC declarations and serialized fields. Specific Godot annotations are selected in T007, validated in T011, not scattered in scene scripts.
 
 ## Commands and notifications
 

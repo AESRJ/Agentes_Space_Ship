@@ -38,12 +38,12 @@ GAME/
 ├── project.godot                       # Jorge: composition and export config
 ├── export_presets.cfg
 ├── autoload/
-│   ├── session_service.gd              # Adrian: transport and role assignment
-│   ├── round_controller.gd             # Adrian: authoritative states
-│   └── server_clock.gd                 # Adrian: authoritative clock
+│   ├── session_service.gd              # Sojo (impl. Adrian): transport and role assignment
+│   ├── round_controller.gd             # Sojo (impl. Adrian): authoritative states
+│   └── server_clock.gd                 # Sojo (impl. Adrian): authoritative clock
 ├── scenes/
 │   ├── main.tscn                       # Jorge: composition only
-│   ├── lobby/lobby.tscn                # Adrian: lobby
+│   ├── lobby/lobby.tscn                # Sojo (impl. Adrian): lobby
 │   ├── cockpit/cockpit.tscn            # Gael: cabin
 │   ├── tower/tower.tscn                # Gael: office and laptop model
 │   ├── modules/antenna_view.tscn       # Gael: visual view

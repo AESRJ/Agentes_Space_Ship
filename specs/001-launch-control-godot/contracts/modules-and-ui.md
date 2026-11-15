@@ -1,6 +1,6 @@
 # Contract v1 — Modules and role UI
 
-Kevin owns rules/definitions; Gael owns antenna visual and scenery; Isra owns manual, calculator and HUD; Adrian owns session state. Jorge connects scenes without editing other owners' internal node structures.
+Kevin owns rules/definitions; Gael owns antenna visual and scenery; Isra owns manual, calculator and HUD; Sojo owns session state (original implementation by Adrian; ADR-0005). Jorge connects scenes without editing other owners' internal node structures.
 
 ## Module boundary
 

@@ -2,6 +2,18 @@
 
 Actualizado: 2026-11-14.
 
+
+## Estado vigente — Sojo confirmado e inicio técnico de T030 (2026-11-15)
+
+Jorge comunicó la cuenta Sojito312 y coordinación comprobó escritura en ambos repositorios. Sojo reporta clones, Godot4.7.2 y pruebas21/21 y43/43; su prueba visual con dos instancias sigue pendiente. Su correo se configura localmente y no se publica en el registro. T030 puede comenzar con T013/T026 ya integradas, conservando la aceptación T019 pendiente de Kevin y sin cambiar el dueño Gael de T039 (apoyo Sojo). [Alcance de inicio](setup/t030-inicio-sojo.md).
+
+Juego main comprobado `5892dd0`: #32 (rediseño) y #33 (T028/T029) ya integrados. T024 está en PR #37, sin fusionar al registrar; no se evalúa ni integra su resultado en este cambio de coordinación. Los estados siguientes son históricos y quedan sustituidos donde difieran.
+
+
+## Actualización — relevo de Adrian por Sojo (2026-11-15)
+
+Por decisión de Jorge ([ADR-0005](decisions/0005-relevo-adrian-sojo.md)), Sojo se incorpora y asume las ocho tareas de Adrian (T007, T008, T009, T011, T013, T017, T030 y T035) y su apoyo en T039. Adrian queda `inactive` y conserva su autoría e historial; no se revocan permisos. Reparto: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8. La cuenta GitHub de Sojo quedó confirmada como Sojito312; ver la actualización vigente. Su primera tarea es T030. El juego está en main `11d649b` (CI 43/43 en Linux y Windows) con T020–T023, T026, T027 y T036 integradas. T019 sigue sin aceptar. Detalle: `specs/001-launch-control-godot/status.md`, guía `docs/setup/sojo.md`.
+
 ## Actualización — corte de antena integrado (T012/T018)
 
 El juego queda en main `29fe8ca` (PR #22) con T003–T018 integradas: lobby, roles, ronda, reloj, antena, manual y resultado compartido en la escena principal. CI de main 43688574914: 36/36 en Linux y Windows. Antes se fusionaron #20 (corrección H-04/H-05 de Gael) y #21 (T012, con la adaptación autorizada de siete pruebas de Adrian por Jorge). **Siguiente: T019 de Kevin** (Q01–Q05 con ambos roles de host). Después se liberan T020 (Gael), T022 (Isra) y T026 (Kevin). No acreditado: F5 humano, Windows con interfaz gráfica, dos PC, LAN e Internet. Detalle en `specs/001-launch-control-godot/status.md` y `docs/sessions/2026-11-14-jorge-integracion-antena.md`.
