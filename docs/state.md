@@ -1,7 +1,13 @@
 # Estado del proyecto
 
-Actualizado: 2026-11-14.
+Actualizado: 2026-11-15.
 
+
+## Estado vigente — T024 integrada (2026-11-15)
+
+Jorge autorizó revisar el flujo y fusionar si pasa. Codex detectó un fallo intermitente del runner gráfico y Claude corrigió únicamente el harness y su evidencia. PR #37 fusionada en main `d4cbdb36e091e483861f5f2e6b6763cec01786f6`, desde la cabecera revisada `49c3847`; el main combinado añade las escenas de Gael #29/#39. CI Linux/Windows: integración 46/46 y harness 21/21. Revisión independiente: mismo código de producción 46/46 y 21/21, runner de Kevin con ambos roles, y GUI final 20/20 procesos con ambas luces. Evidencia en `docs/qa/t024-integracion-puestos.md` del juego.
+
+Gael puede iniciar T025 (Q06–Q07 y medición real de FPS). Kevin repite y acepta T019 por separado; issue23 sigue abierto. Sojo mantiene T030 técnicamente liberada sobre T013/T026; T031 de Jorge espera su entrega, con T024/T027/T028/T029 integradas. T033/T034 tienen código integrado por Gael en #29/#39; #30 se cerró sin merge. Aún no están conectadas en main ni aceptadas en Q11–Q12/T037, y conservan sus dependencias. No se acreditan Windows GUI, F5 humano, dos PC ni Internet. Los estados siguientes son históricos cuando difieran.
 
 ## Estado vigente — Sojo confirmado e inicio técnico de T030 (2026-11-15)
 

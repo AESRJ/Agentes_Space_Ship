@@ -350,7 +350,7 @@
     "readiness": "qa_evidence_merged_not_accepted",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/24",
     "merged_commit": "d02f979eb0cea45a24181e426f464f4ab77451de",
-    "note": "Issue #23 corregido en #25 (36a0efc). Pendiente: incidencia del runner GUI reportada por Kevin y repetición de Q05; no aceptada."
+    "note": "Issue #23 corregido en #25; runner GUI actualizado y verificado en #37 d4cbdb3. Kevin debe repetir Q01–Q05 y registrar aceptación; sigue no aceptada."
   },
   {
     "id": "T020",
@@ -444,7 +444,10 @@
       "FR-009",
       "FR-010"
     ],
-    "readiness": "ready_to_start"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/37",
+    "merged_commit": "d4cbdb36e091e483861f5f2e6b6763cec01786f6",
+    "note": "Puestos, manual y HUD integrados; CI 46/46 +21/21 Linux/Windows; GUI independiente 20/20 procesos. T025 mantiene QA de legibilidad/FPS."
   },
   {
     "id": "T025",
@@ -463,7 +466,8 @@
       "SC-002",
       "SC-006"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "ready_to_start",
+    "note": "T024 integrada en #37 d4cbdb3. Ejecutar Q06–Q07; no aceptada por las pruebas de integración."
   },
   {
     "id": "T026",
@@ -573,7 +577,8 @@
       "FR-012",
       "FR-013"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "waiting_for_dependencies",
+    "note": "T024/T027/T028/T029 integradas; falta T030 de Sojo. No iniciar la integración sin esa entrega."
   },
   {
     "id": "T032",
@@ -609,8 +614,10 @@
       "FR-019",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies",
-    "draft_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/29"
+    "readiness": "code_merged_pending_flow_acceptance",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/29",
+    "merged_commit": "15b0e90dcb9bdb6cb50f5f9cf0ba6be184f8ae8f",
+    "note": "Código integrado por Gael durante la revisión T024. No conectado en scenes/main.gd; no acredita T025 ni QA Q11–Q12/T037. Dependencias originales conservadas."
   },
   {
     "id": "T034",
@@ -626,8 +633,10 @@
       "FR-019",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies",
-    "draft_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/30"
+    "readiness": "code_merged_pending_flow_acceptance",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/39",
+    "merged_commit": "ab197bfc146556f02f703212f8102cb088c7fe9a",
+    "note": "Código integrado por Gael durante la revisión T024. No conectado en scenes/main.gd; no acredita T025 ni QA Q11–Q12/T037. Dependencias originales conservadas."
   },
   {
     "id": "T035",

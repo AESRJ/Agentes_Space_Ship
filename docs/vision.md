@@ -2,7 +2,7 @@
 
 ## Dirección vigente — Launch Control en Godot (2026-11-14)
 
-Equipo actual de cinco integrantes; Sojo fuera por ahora. Base y juego en AESRJ/LaunchControlGodot, con liberación técnica y tareas según ADR-0004.
+Equipo actual: Jorge, Gael, Sojo, Kevin e Isra. Sojo relevó a Adrian el 2026-11-15 (ADR-0005), conserva el mantenimiento de sus entregas y comienza T030 con T013/T026 integradas; la aceptación T019 sigue pendiente de Kevin. Base y juego en AESRJ/LaunchControlGodot.
 
 Jorge solicita planificar el prototipo de `Etapa_1_final.md` con Spec Kit y Godot: astronauta en cabina, torre con laptop/manual, reloj compartido y acertijos antes del despegue. Para esta entrega son dos roles, primera persona y dos PC por Internet; el corte inicial usa la antena. El reparto inicial equilibrado se concreta en [el plan Godot](plan-godot.md) y [ADR-0003](decisions/0003-launch-control-godot-speckit.md). Godot sustituye la selección anterior de Unity para este prototipo; el resto de esta página se conserva como historia y no reabre esa decisión. Las ampliaciones y detalles técnicos del nuevo plan se distinguen como propuestas.
 
