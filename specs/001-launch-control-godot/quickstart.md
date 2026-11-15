@@ -30,6 +30,6 @@ Status: procedures to execute when the game exists. None of these gameplay check
 
 ## Evidence and limits
 
-Jorge consolidates GAME/docs/qa/acceptance.md with build revision, engine version, anonymous machine labels, scenario ID, actual/expected outcome, screenshots or short clips and unresolved defects. Adrian records connectivity route and clock observations without credentials or addresses. Failing Q13 means remote delivery remains pending even if Q01–Q12 pass locally. Presentation, FPS and network metrics are targets to verify, not achievements of this specification.
+Jorge consolidates GAME/docs/qa/acceptance.md with build revision, engine version, anonymous machine labels, scenario ID, actual/expected outcome, screenshots or short clips and unresolved defects. Sojo records connectivity route and clock observations without credentials or addresses. Failing Q13 means remote delivery remains pending even if Q01–Q12 pass locally. Presentation, FPS and network metrics are targets to verify, not achievements of this specification.
 
 First playable cut: Q01–Q05 with a plain UI. Final prototype requires all rows and the acceptance mapping in tasks.md. No release/deployment is implied by this guide.

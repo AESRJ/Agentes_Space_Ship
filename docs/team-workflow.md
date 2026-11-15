@@ -2,13 +2,13 @@
 
 ## Estado vigente del equipo (2026-11-14)
 
-Activos: Jorge (AESRJ), Gael (GaelFlores04), Adrian (adrianbalderas373488), Kevin (KVSO755) e Isra (issgg), con escritura comprobada en AESRJ/LaunchControlGodot. Sojo no está incorporado por instrucción de Jorge: registro pending, sin tareas activas. El reparto vigente son 42 tareas entre cinco: 9/9/8/8/8. Las referencias siguientes a seis personas describen el registro inicial y quedan sustituidas para la operación actual.
+Activos (desde el 2026-11-15, [ADR-0005](decisions/0005-relevo-adrian-sojo.md)): Jorge (AESRJ), Gael (GaelFlores04), Kevin (KVSO755), Isra (issgg) y Sojo (cuenta pendiente de confirmar). Las cuatro cuentas confirmadas tienen escritura comprobada en AESRJ/LaunchControlGodot. Adrian (adrianbalderas373488) queda `inactive`: conserva su historial y no se revocan sus permisos, pero ya no inicia sesiones ni firma commits nuevos con la herramienta. El reparto vigente son 42 tareas entre cinco: 9/9/8/8/8. Las referencias siguientes a seis personas describen el registro inicial y quedan sustituidas para la operación actual.
 
-Registro canónico: `team/members.json`. Las cinco cuentas activas están confirmadas y la de Sojo sigue sin solicitarse mientras no esté incorporado. El registro inicial de seis se conserva en ADR-0002 y en Git como historia.
+Registro canónico: `team/members.json`. Están confirmadas las cuentas de Jorge, Gael, Kevin e Isra. La de Sojo está pendiente: hasta recibirla no se invita ni se declara su acceso. Estados admitidos: `active`, `pending` e `inactive`; solo `active` inicia sesiones. El registro inicial de seis se conserva en ADR-0002 y en Git como historia.
 
 ## Primer paso: identificarse por nombre en cada conversación
 
-Antes de trabajar, cada persona dice «Soy Gael», «Soy Adrian», «Soy Kevin», «Soy Isra» o «Soy Jorge». Si no lo ha dicho en la conversación actual, la IA pregunta su nombre antes de consultar memoria o actuar. Una sesión local anterior no reemplaza esta confirmación; si ya lo dijo, no se le vuelve a preguntar.
+Antes de trabajar, cada persona dice «Soy Gael», «Soy Sojo», «Soy Kevin», «Soy Isra» o «Soy Jorge». Si no lo ha dicho en la conversación actual, la IA pregunta su nombre antes de consultar memoria o actuar. Una sesión local anterior no reemplaza esta confirmación; si ya lo dijo, no se le vuelve a preguntar.
 
 Cada persona usa su cuenta GitHub, su propio clon o worktree y su propia autenticación Google. No compartan una carpeta de trabajo simultánea. Dentro de Codex puede escribir:
 
@@ -87,4 +87,4 @@ Entrega: diff revisable, evidencia y checkpoint con responsable.
 
 Consulta: 2026-11-14. GitHub recomienda [tareas claras, acotadas y con criterios de aceptación, junto con un entorno donde el agente pueda validar](https://docs.github.com/en/copilot/tutorials/cloud-agent/get-the-best-results). También recomienda [evaluar y probar el resultado generado por IA](https://docs.github.com/en/copilot/concepts/prompting-and-context/prompt-engineering). Estas fuentes sostienen las prácticas de alcance y verificación; el tablero, los límites de tareas y el flujo sin aprobación externa son una adaptación propuesta para este equipo. No requieren contratar Copilot: pueden aplicarse con las herramientas que ya utilizan.
 
-Estado actual: cinco nombres activos y cuentas confirmadas; Sojo pending por instrucción de Jorge. Pendiente la comprobación personal de cada equipo. Los recibos y el historial Git distinguen preparación, publicación e integración; no se declaran pruebas inexistentes.
+Estado actual: cinco nombres activos (Jorge, Gael, Sojo, Kevin e Isra); la cuenta de Sojo está pendiente y Adrian inactivo desde el relevo (ADR-0005). Pendiente la comprobación personal de cada equipo. Los recibos y el historial Git distinguen preparación, publicación e integración; no se declaran pruebas inexistentes.

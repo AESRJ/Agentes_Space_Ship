@@ -28,7 +28,9 @@ def members(root=ROOT):
     for member in entries:
         if not re.fullmatch(r'[a-z][a-z0-9-]*', member['id']):
             raise ValueError('ID de integrante inválido.')
-        if member['status'] not in ('active', 'pending'):
+        # pending: aún no incorporado; inactive: salió del reparto y conserva su historial.
+        # Solo 'active' puede iniciar sesiones o firmar commits nuevos (active_member).
+        if member['status'] not in ('active', 'pending', 'inactive'):
             raise ValueError('Estado de integrante inválido.')
         if member['status'] == 'active' and not member['name']:
             raise ValueError('Un integrante activo necesita nombre.')
