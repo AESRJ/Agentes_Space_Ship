@@ -624,10 +624,12 @@
       "FR-019",
       "SC-007"
     ],
-    "readiness": "code_merged_pending_flow_acceptance",
+    "readiness": "flow_connected_pending_qa",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/29",
     "merged_commit": "15b0e90dcb9bdb6cb50f5f9cf0ba6be184f8ae8f",
-    "note": "Código integrado por Gael durante la revisión T024. No conectado en scenes/main.gd; no acredita T025 ni QA Q11–Q12/T037. Dependencias originales conservadas."
+    "note": "Gael conectó desenlaces desde los puestos en PR53; QA T037 pendiente. Codex: check21/21, integración100/0 y sondeo de señales/reset PASS; GUI normal requiere revalidación por timeout local.",
+    "flow_evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/53",
+    "flow_commit": "157a6b946f9c35fa850381a00b286d3424bfb1c5"
   },
   {
     "id": "T034",
@@ -643,10 +645,12 @@
       "FR-019",
       "SC-007"
     ],
-    "readiness": "code_merged_pending_flow_acceptance",
+    "readiness": "flow_connected_pending_qa",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/39",
     "merged_commit": "ab197bfc146556f02f703212f8102cb088c7fe9a",
-    "note": "Código integrado por Gael durante la revisión T024. No conectado en scenes/main.gd; no acredita T025 ni QA Q11–Q12/T037. Dependencias originales conservadas."
+    "note": "Gael conectó desenlaces desde los puestos en PR53; QA T037 pendiente. Codex: check21/21, integración100/0 y sondeo de señales/reset PASS; GUI normal requiere revalidación por timeout local.",
+    "flow_evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/53",
+    "flow_commit": "157a6b946f9c35fa850381a00b286d3424bfb1c5"
   },
   {
     "id": "T035",
@@ -706,7 +710,7 @@
       "SC-007"
     ],
     "readiness": "waiting_for_replay_ui_and_outcome_acceptance",
-    "note": "T032 aceptada y backend T035 integrado. Falta composición de revancha; conexión de desenlaces propuesta en PR53 de Gael. No aceptar Q11–Q12 antes de ejecutar."
+    "note": "T032 aceptada y desenlaces conectados (#53). Falta componer botón de revancha y ejecutar Q11–Q12; no aceptar por CI."
   },
   {
     "id": "T038",
@@ -733,7 +737,7 @@
     "depends_on": [
       "T038"
     ],
-    "path": "GAME/docs/qa/internet-session.md",
+    "path": "GAME/docs/qa/lan-session.md",
     "covers": [
       "FR-015",
       "FR-020",
@@ -741,7 +745,8 @@
       "SC-005"
     ],
     "readiness": "waiting_for_dependencies",
-    "technical_support": "sojo"
+    "technical_support": "sojo",
+    "note": "ADR-0006: Jorge aprobó dos PC físicos en la misma LAN. Cinco rondas y desconexión; loopback no basta. Espera T038; no se acredita prueba real todavía."
   },
   {
     "id": "T040",

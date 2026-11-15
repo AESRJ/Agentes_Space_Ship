@@ -16,7 +16,7 @@ Jorge solicita Godot y Spec Kit, sustituyendo la planificación histórica de Un
 - **Target Platform**: escritorio Windows para el equipo; Linux como entorno de desarrollo opcional. Exportaciones de ambos pares deben usar igual versión y contenido.
 - **Project Type**: juego cooperativo 3D con UI 2D, dos puestos de cámara fija.
 - **Performance Goals**: ≥30 FPS a 1280 × 720 en dos máquinas identificadas; diferencia visual de reloj ≤1 s en conexión estable de prueba.
-- **Constraints**: host autoritativo, exactamente dos roles, una ronda, máximo dos módulos activos, voz externa. La ruta UDP de Internet debe probarse, no presumirse.
+- **Constraints**: host autoritativo, exactamente dos roles, una ronda, máximo dos módulos activos, voz externa. La sesión entre dos PC se demuestra en LAN (ADR-0006); no se presume haberla probado por existir loopback.
 - **Scale/Scope**: fácil: antena; normal: antena y códigos; 180 s propuestos en ambos. Sin paseo, matchmaking, física orbital, voz, cuentas ni migración de host.
 
 ## Constitution Check
@@ -81,4 +81,4 @@ Do not execute all 42 tasks through one AI prompt. Each person declares name, ta
 
 ## Risks and Complexity Tracking
 
-No engine source changes, server infrastructure or external plugin justified at this stage. The main risks are Internet reachability, scene merge conflicts and overbuilding all reference modules. T039 owns the external-network proof; file ownership prevents shared scene edits; scope is limited to two modules. A route blocked by CGNAT is not fixed by promising that ENet or port forwarding always works. Local demos remain interim evidence, not FR-020 completion.
+No engine source changes, server infrastructure or external plugin justified at this stage. The main risks are LAN reachability, scene merge conflicts and overbuilding all reference modules. T039 owns the two-PC LAN proof (ADR-0006); file ownership prevents shared scene edits; scope is limited to two modules. A route blocked by CGNAT is not fixed by promising that ENet or port forwarding always works. Local demos remain interim evidence, not FR-020 completion.

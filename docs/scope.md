@@ -1,5 +1,9 @@
 # Alcance actual
 
+## Alcance de red actualizado — 2026-11-15
+
+Jorge aprobó dos PC físicos en la misma LAN como criterio final del prototipo (ADR-0006). Sustituye los requisitos anteriores de Internet entre redes externas para esta entrega. No se declara la prueba realizada; T039 conserva cinco rondas y desconexión.
+
 ## Alcance vigente — encargo de Jorge (2026-11-14)
 
 Actualización 2026-11-15: cinco integrantes activos (Jorge, Gael, Sojo, Kevin e Isra). Sojo releva a Adrian conforme a ADR-0005, sin borrar autoría previa. Juego en AESRJ/LaunchControlGodot. La base técnica publicada libera las tareas indicadas en status.md sin sustituir las pruebas personales o la aceptación de QA.

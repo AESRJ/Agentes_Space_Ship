@@ -1,5 +1,14 @@
 # Estado operativo — Launch Control
 
+## Actualización vigente — desenlaces conectados y LAN aprobada
+
+Jorge autorizó fusionar las entregas revisables y aprobó explícitamente LAN como criterio final de T039 ([ADR-0006](../../docs/decisions/0006-aceptacion-red-lan.md)). Juego: #53 de Gael fusionado en `157a6b9` (desenlaces conectados) y #54 de Kevin en `3b849fe` (LAN). Documentación #45 integrada en `a8d4864`. T032 está validada por Isra (#51/#52). La actualización anterior de agentes está integrada por #8 en `a45129f`.
+
+Siguiente encargo de Jorge a Claude: componer «Otra ronda» usando `RoundController.request_return_to_lobby()`, conservar los desenlaces conectados por Gael y revisar el timeout GUI observado durante la comprobación de #53. Gael conserva la aceptación T037; T038 espera esa evidencia. T039 requiere después dos PC en la misma LAN, cinco rondas y una desconexión; una sola PC no basta. No se declara prueba LAN realizada ni Internet obligatorio para esta entrega.
+
+Codex comprobó #53: importación/check, harness 21/21, integración 100/0 y sondeo de conexión de señales/reset PASS. El recorrido GUI normal local agotó el tiempo y no completó el código: el destello esperado ya estaba PENDIENTE al capturarlo. No se confirmó la causa ni se presenta como regresión de producción demostrada. Logs `/tmp/codex-pr53-gui/tower/` en el equipo de coordinación; debe revalidarse antes de cerrar QA. CI Linux/Windows de la cabecera aprobado. Gael fusionó #53 durante la revisión.
+
+
 ## Corte vigente — 2026-11-15: T032 aceptada y cierre de integración
 
 Juego comprobado: `76e880f` (T031) y `976bc8c` (informe T032). Documentación de hackathon integrada en #45 `a8d4864`; no es una presentación gráfica, video ni envío al portal. T019 aceptada (#43); T025 cerrada por Gael (#47, seguimientos no bloqueantes); T030 integrada (#44); T031 integrada (#50); T032 validada por Isra (#51). La casilla de T032 se actualizó en el juego mediante #52. T035 aporta la API de revancha (#49); falta conectarla en main. T041 tiene registro (#46) con cierre de recursos finales pendiente.

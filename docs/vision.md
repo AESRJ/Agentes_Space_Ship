@@ -1,5 +1,9 @@
 # Contexto y visión provisional
 
+## Alcance de red actualizado — 2026-11-15
+
+Jorge aprobó dos PC físicos en la misma LAN como criterio final del prototipo (ADR-0006). Sustituye los requisitos anteriores de Internet entre redes externas para esta entrega. No se declara la prueba realizada; T039 conserva cinco rondas y desconexión.
+
 ## Dirección vigente — Launch Control en Godot (2026-11-14)
 
 Equipo actual: Jorge, Gael, Sojo, Kevin e Isra. Sojo relevó a Adrian el 2026-11-15 (ADR-0005), conserva el mantenimiento de sus entregas y comienza T030 con T013/T026 integradas; la aceptación T019 sigue pendiente de Kevin. Base y juego en AESRJ/LaunchControlGodot.
