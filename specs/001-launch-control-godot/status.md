@@ -1,18 +1,18 @@
 # Estado operativo — Launch Control
 
-Actualizado: 2026-11-15 (confirmación de Sojo y estados #32/#33). No sustituye criterios de aceptación ni declara terminado el juego.
+Actualizado: 2026-11-15 (T024 integrada y liberación de T025). No sustituye criterios de aceptación ni declara terminado el juego.
 
 ## Estado vigente — relevo de Adrian por Sojo (2026-11-15)
 
 **Decisión de Jorge ([ADR-0005](../../docs/decisions/0005-relevo-adrian-sojo.md)):** Sojo asume T007, T008, T009, T011, T013, T017, T030 y T035, más el apoyo técnico en T039 (dueño: Gael). Adrian queda inactivo y conserva la autoría de lo que implementó. Reparto: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8. Sojo usa **Sojito312**, confirmado por Jorge y con escritura comprobada por API en ambos repositorios. Su reporte de entorno no sustituye la prueba visual propia, todavía pendiente. Guía: [docs/setup/sojo.md](../../docs/setup/sojo.md).
 
-Juego comprobado: main `5892dd056760dcb1ede7db6e892895c577c524f8`. T024 está publicada en PR #37, sin fusionar al registrar. Entregas integradas desde el estado anterior:
+Juego comprobado: main `d4cbdb36e091e483861f5f2e6b6763cec01786f6`. T024 fusionada en [PR #37](https://github.com/AESRJ/LaunchControlGodot/pull/37), cabecera revisada `49c3847`. CI 43752123390: 46/46 integración y 21/21 harness en Linux/Windows. Codex verificó el mismo código de producción localmente (46/46, 21/21 y runner de Kevin con ambos roles), y la corrección gráfica final en 20/20 procesos; luces fija/parpadeante, desconexiones y retorno al lobby. Claude registró además 32/32 procesos gráficos, con y sin carga. Windows GUI, F5 humano, dos PC/Internet y FPS finales no acreditados. Entregas integradas desde el estado anterior:
 
 | Entrega | PR | Commit | Nota |
 | --- | --- | --- | --- |
 | T020 cabina (Gael) | #16 | `adae9b3` | rediseño #32 integrado en `a5ecf97` |
 | T021 oficina (Gael) | #17 | `46e07e4` | — |
-| T019 evidencia de QA (Kevin) | #24 | `d02f979` | **no aceptada**: queda una incidencia del runner GUI y repetir Q05 |
+| T019 evidencia de QA (Kevin) | #24 | `d02f979` | **no aceptada**: runner corregido en #37; Kevin debe repetir y aceptar Q01–Q05 |
 | Issue #23: interrupción visible (Jorge) | #25 | `36a0efc` | relacionado con Q05; el issue sigue abierto |
 | T026 regla de código (Kevin) | #26 | `71f3fc2` | — |
 | T027 placa de código (Kevin) | #27 | `c2b8b88` | — |
@@ -22,16 +22,16 @@ Juego comprobado: main `5892dd056760dcb1ede7db6e892895c577c524f8`. T024 está pu
 | T028/T029 página de código y calculadora (Isra) | #33 | `e54858e` | integradas, sin aceptar T019 |
 | Rediseño de T020/T021 (Gael) | #32 | `a5ecf97` | integrado |
 
-Abiertos al registrar: T024 #37 y borradores #29/#30 (T033/T034). #32 y #33 están fusionados. PR #8 de agentes queda fuera de alcance.
+T024 #37 fusionada en `d4cbdb3`. #29 (T033, `15b0e90`) y #39 (T034, `ab197bf`) se fusionaron por Gael durante la revisión. #30 cerrada sin fusionar, sustituida por #39. Son escenas adicionales sin cableado en main; no acreditan T025 ni Q11–Q12/T037. Se conserva su aceptación pendiente y sus dependencias. #32 y #33 están fusionados. PR #8 de agentes queda fuera de alcance.
 
 | Persona | Siguiente | Dependencia real |
 | --- | --- | --- |
 | **Sojo** | **T030**: fácil = [antenna], normal = [antenna, code]; sin cambios durante la ronda; normal no gana con un solo módulo | T013 y T026 integradas. Base actual: `RULE_SCRIPTS` solo `antenna` y `difficulty_modules` solo `easy` |
 | Sojo | T035: revancha y ronda limpia | T017 y **T030** |
-| Kevin | T019: aceptar Q01–Q05 (incidencia del runner GUI, repetir Q05) | — |
+| Kevin | T019: repetir y aceptar Q01–Q05 con el runner actualizado en #37 | — |
 | Isra | T032 después de T031; T028/T029 ya integradas (#33) | T031 pendiente |
-| Jorge | T024 en revisión (#37) | T020–T023 y rediseño #32 integrados |
-| Gael | T025; #32 ya integrado | T024 integrada y disponible para QA |
+| Jorge | T031: integración de dificultad y segundo módulo | T030 de Sojo pendiente; T024 y T027–T029 integradas |
+| Gael | **T025 liberada**: Q06–Q07 y FPS en equipos identificados | T024 integrada en #37 |
 
 Las seis tareas que implementó Adrian se mantienen, no se reimplementan. **T030 está técnicamente liberada para Sojo** sobre T013/T026 integradas; esto no equivale a aceptar T019 ni cambiar su responsable. [Decisión y alcance](../../docs/setup/t030-inicio-sojo.md).
 

@@ -4,8 +4,8 @@
 
 | Integrante | Responsabilidad | Tareas | Primer paso disponible |
 | --- | --- | --- | --- |
-| Jorge | Base, composición e integración; validación inicial y aceptación final | T001, T002, T003, T012, T018, T024, T031, T038, T040 | T024 en revisión (#37), con T020–T023 integradas (T001/T002 con seguimiento; T003, T012 y T018 integradas) |
-| Gael | Escenas 3D, animaciones y verificación visual/desenlaces | T004, T015, T020, T021, T025, T033, T034, T037, T039 | T025 después de T024 (T020/T021 y rediseño #32 integrados) |
+| Jorge | Base, composición e integración; validación inicial y aceptación final | T001, T002, T003, T012, T018, T024, T031, T038, T040 | T024 integrada (#37); siguiente T031, pendiente T030 de Sojo, con T027–T029 integradas (T001/T002 con seguimiento; T003, T012 y T018 integradas) |
+| Gael | Escenas 3D, animaciones y verificación visual/desenlaces | T004, T015, T020, T021, T025, T033, T034, T037, T039 | T025 liberada: T024 integrada (#37); verificar legibilidad y rendimiento |
 | Sojo | Red, roles, estado y reloj; verificación del contrato (relevo de Adrian) | T007, T008, T009, T011, T013, T017, T030, T035 | **T030** (T013 y T026 integradas). T007–T009, T011, T013 y T017 las implementó Adrian y están integradas: Sojo las mantiene. Guía: `docs/setup/sojo.md` |
 | Kevin | Módulos y reglas; verificación de la antena | T005, T010, T014, T019, T026, T027, T036, T041 | Aceptar T019; T026/T027/T036 ya integradas; T041 espera T034 |
 | Isra | Manual, interfaz y calculadora; verificación de dificultad | T006, T016, T022, T023, T028, T029, T032, T042 | T032 después de T031 (T022/T023 y T028/T029 integradas) |
