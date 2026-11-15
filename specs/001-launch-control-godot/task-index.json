@@ -38,7 +38,7 @@
       "FR-018",
       "SC-006"
     ],
-    "readiness": "merged_fixture_validated",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/2",
     "merged_commit": "3cf3de79f9dd360013a4ed8fa41a27a81e6b7482"
   },
@@ -56,7 +56,7 @@
       "FR-018",
       "FR-019"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/3",
     "merged_commit": "824784aa0e56d4d74ebe2ba3bc7035446a0e45db"
   },
@@ -73,9 +73,9 @@
       "FR-004",
       "FR-019"
     ],
-    "readiness": "merged_tests_pass",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/5",
-    "merged_commit": "5cb6fd6"
+    "merged_commit": "5cb6fd6f9d02a94e926ac3ad1086e611b1592030"
   },
   {
     "id": "T006",
@@ -90,13 +90,13 @@
       "FR-010",
       "FR-011"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/8",
     "merged_commit": "d7ac177ef906b7ef1f2898e5e532d113f9752ab4"
   },
   {
     "id": "T007",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": null,
     "depends_on": [
       "T002"
@@ -107,13 +107,15 @@
       "FR-015",
       "FR-020"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/9",
-    "merged_commit": "793349dafecf79fda22114189d1db9b2a0a01e4a"
+    "merged_commit": "793349dafecf79fda22114189d1db9b2a0a01e4a",
+    "previous_owner": "adrian",
+    "implemented_by": "adrian"
   },
   {
     "id": "T008",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": null,
     "depends_on": [
       "T007"
@@ -125,13 +127,15 @@
       "FR-015",
       "FR-016"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/10",
-    "merged_commit": "2122152425a6d8ebe6785b3c29f5407385459fa9"
+    "merged_commit": "2122152425a6d8ebe6785b3c29f5407385459fa9",
+    "previous_owner": "adrian",
+    "implemented_by": "adrian"
   },
   {
     "id": "T009",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": null,
     "depends_on": [
       "T008"
@@ -142,9 +146,11 @@
       "FR-007",
       "SC-002"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/11",
-    "merged_commit": "0725d02471adf1813d270947e7fd8acf16c34adf"
+    "merged_commit": "0725d02471adf1813d270947e7fd8acf16c34adf",
+    "previous_owner": "adrian",
+    "implemented_by": "adrian"
   },
   {
     "id": "T010",
@@ -159,13 +165,13 @@
       "FR-006",
       "FR-017"
     ],
-    "readiness": "merged_tests_pass",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/6",
-    "merged_commit": "0d81ddf"
+    "merged_commit": "0d81ddfa3071c256875d9d6789c6125e49f3fd43"
   },
   {
     "id": "T011",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": null,
     "depends_on": [
       "T007",
@@ -179,9 +185,11 @@
       "FR-015",
       "FR-017"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/13",
-    "merged_commit": "bfebc544d774a3eaa3f21b5e02bdf72a7e246747"
+    "merged_commit": "bfebc544d774a3eaa3f21b5e02bdf72a7e246747",
+    "previous_owner": "adrian",
+    "implemented_by": "adrian"
   },
   {
     "id": "T012",
@@ -198,11 +206,13 @@
       "FR-003",
       "FR-007"
     ],
-    "readiness": "ready_to_start"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/21",
+    "merged_commit": "349282c40ceb45359ba74fa31eaf7e341db81223"
   },
   {
     "id": "T013",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": "US1",
     "depends_on": [
       "T007",
@@ -213,9 +223,11 @@
       "FR-001",
       "FR-013"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/12",
-    "merged_commit": "c700753613455f32e4c116a24cdae55f82741944"
+    "merged_commit": "c700753613455f32e4c116a24cdae55f82741944",
+    "previous_owner": "adrian",
+    "implemented_by": "adrian"
   },
   {
     "id": "T014",
@@ -230,9 +242,9 @@
       "FR-006",
       "SC-001"
     ],
-    "readiness": "merged_tests_pass",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/7",
-    "merged_commit": "1c2e421"
+    "merged_commit": "1c2e42101e2b330a435e0775d88702a08a3e5a44"
   },
   {
     "id": "T015",
@@ -248,9 +260,14 @@
       "FR-005",
       "FR-018"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/4",
-    "merged_commit": "890c192e437cee857d542cf4ac737015755c8321"
+    "merged_commit": "890c192e437cee857d542cf4ac737015755c8321",
+    "followup_fix": {
+      "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/20",
+      "merged_commit": "ca8515c5c2b61d8f6e8d75682c8727f68efcdd76",
+      "note": "H-04/H-05"
+    }
   },
   {
     "id": "T016",
@@ -265,13 +282,13 @@
       "FR-005",
       "FR-010"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/14",
     "merged_commit": "10241ca2e0f23d64fd092b02e236eb14083e4498"
   },
   {
     "id": "T017",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": "US1",
     "depends_on": [
       "T009",
@@ -285,9 +302,11 @@
       "FR-007",
       "FR-017"
     ],
-    "readiness": "merged_audited",
+    "readiness": "merged",
     "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/15",
-    "merged_commit": "36f8386f9b3c89f7fa79995afa57a0fecc93afb3"
+    "merged_commit": "36f8386f9b3c89f7fa79995afa57a0fecc93afb3",
+    "previous_owner": "adrian",
+    "implemented_by": "adrian"
   },
   {
     "id": "T018",
@@ -306,7 +325,9 @@
       "FR-003",
       "FR-007"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/22",
+    "merged_commit": "29fe8cab0c544f0af58dc58116d7db94b8723643"
   },
   {
     "id": "T019",
@@ -326,7 +347,10 @@
       "FR-017",
       "SC-001"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "accepted",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/43",
+    "merged_commit": "74a9c0e",
+    "note": "Kevin aceptó Q01–Q05; issue #23 cerrado."
   },
   {
     "id": "T020",
@@ -342,8 +366,12 @@
       "FR-008",
       "FR-018"
     ],
-    "readiness": "draft_pr_waiting_dependencies",
-    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/16"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/16",
+    "merged_commit": "adae9b33604b611f2aee12e9876d4a52b8630bb0",
+    "redesign_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_commit": "a5ecf97ac84acc61900778f20dc161ccfb909711"
   },
   {
     "id": "T021",
@@ -357,8 +385,12 @@
       "FR-009",
       "FR-018"
     ],
-    "readiness": "draft_pr_waiting_dependencies",
-    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/17"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/17",
+    "merged_commit": "46e07e4faf959a8709ea43a49cc8fa65539f09b8",
+    "redesign_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_pr": "https://github.com/AESRJ/LaunchControlGodot/pull/32",
+    "update_commit": "a5ecf97ac84acc61900778f20dc161ccfb909711"
   },
   {
     "id": "T022",
@@ -374,7 +406,9 @@
       "FR-009",
       "FR-010"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/34",
+    "merged_commit": "11d649b396ef6ec8c9f41bc54b24f40cb52d49d0"
   },
   {
     "id": "T023",
@@ -389,7 +423,9 @@
       "FR-018",
       "SC-002"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/34",
+    "merged_commit": "11d649b396ef6ec8c9f41bc54b24f40cb52d49d0"
   },
   {
     "id": "T024",
@@ -408,7 +444,10 @@
       "FR-009",
       "FR-010"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/37",
+    "merged_commit": "d4cbdb36e091e483861f5f2e6b6763cec01786f6",
+    "note": "Puestos, manual y HUD integrados; CI 46/46 +21/21 Linux/Windows; GUI independiente 20/20 procesos. T025 mantiene QA de legibilidad/FPS."
   },
   {
     "id": "T025",
@@ -427,7 +466,10 @@
       "SC-002",
       "SC-006"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "accepted_with_followups",
+    "note": "Gael declaró completada T025; F5 humano/segundo equipo son seguimientos, no bloqueos.",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/47",
+    "merged_commit": "cf79aab"
   },
   {
     "id": "T026",
@@ -443,7 +485,9 @@
       "FR-011",
       "FR-019"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/26",
+    "merged_commit": "71f3fc2bdaaee335a5ac7f50a8da21485a83fd37"
   },
   {
     "id": "T027",
@@ -459,7 +503,9 @@
       "FR-011",
       "FR-018"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/27",
+    "merged_commit": "c2b8b88babe1c4cf50fbe855230846e9d4ea2a75"
   },
   {
     "id": "T028",
@@ -475,7 +521,9 @@
       "FR-011",
       "FR-019"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/33",
+    "merged_commit": "e54858e8912061755d9d39584178cd49097ea55f"
   },
   {
     "id": "T029",
@@ -490,11 +538,13 @@
       "FR-012",
       "SC-004"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/33",
+    "merged_commit": "e54858e8912061755d9d39584178cd49097ea55f"
   },
   {
     "id": "T030",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": "US3",
     "depends_on": [
       "T013",
@@ -506,7 +556,12 @@
       "FR-013",
       "SC-003"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "previous_owner": "adrian",
+    "release_note": "Inicio técnico autorizado por coordinación de Jorge sobre T013/T026 integradas; no equivale a aceptación de T019. Ver docs/setup/t030-inicio-sojo.md.",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/44",
+    "merged_commit": "404fc5a",
+    "note": "Dificultades fácil/normal integradas; libera T031."
   },
   {
     "id": "T031",
@@ -527,7 +582,10 @@
       "FR-012",
       "FR-013"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "note": "Codex verificó main con 100/100 y 21/21, GUI con ambos roles. T032 tiene evidencia posterior.",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/50",
+    "merged_commit": "76e880f"
   },
   {
     "id": "T032",
@@ -546,7 +604,10 @@
       "SC-003",
       "SC-004"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "accepted",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/51",
+    "merged_commit": "976bc8c",
+    "note": "Informe Q08–Q10 de Isra integrado: Windows 100/0 y GUI sintética 4/4; no Internet."
   },
   {
     "id": "T033",
@@ -563,7 +624,10 @@
       "FR-019",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "code_merged_pending_flow_acceptance",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/29",
+    "merged_commit": "15b0e90dcb9bdb6cb50f5f9cf0ba6be184f8ae8f",
+    "note": "Código integrado por Gael durante la revisión T024. No conectado en scenes/main.gd; no acredita T025 ni QA Q11–Q12/T037. Dependencias originales conservadas."
   },
   {
     "id": "T034",
@@ -579,11 +643,14 @@
       "FR-019",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "code_merged_pending_flow_acceptance",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/39",
+    "merged_commit": "ab197bfc146556f02f703212f8102cb088c7fe9a",
+    "note": "Código integrado por Gael durante la revisión T024. No conectado en scenes/main.gd; no acredita T025 ni QA Q11–Q12/T037. Dependencias originales conservadas."
   },
   {
     "id": "T035",
-    "owner": "adrian",
+    "owner": "sojo",
     "story": "US4",
     "depends_on": [
       "T017",
@@ -596,7 +663,11 @@
       "FR-016",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "backend_merged_pending_ui",
+    "previous_owner": "adrian",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/49",
+    "merged_commit": "3222c3f",
+    "note": "API de revancha integrada; falta botón Otra ronda en composición de Jorge antes de T037."
   },
   {
     "id": "T036",
@@ -611,7 +682,9 @@
       "FR-016",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "merged",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/28",
+    "merged_commit": "b5487599d3dc7ac69a22fbc1f92fc836ab300412"
   },
   {
     "id": "T037",
@@ -632,7 +705,8 @@
       "FR-016",
       "SC-007"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "waiting_for_replay_ui_and_outcome_acceptance",
+    "note": "T032 aceptada y backend T035 integrado. Falta composición de revancha; conexión de desenlaces propuesta en PR53 de Gael. No aceptar Q11–Q12 antes de ejecutar."
   },
   {
     "id": "T038",
@@ -649,7 +723,8 @@
       "FR-020",
       "SC-006"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "waiting_for_dependencies",
+    "note": "T025 y T032 aceptadas; sigue esperando T037. No iniciar builds finales antes de esa evidencia."
   },
   {
     "id": "T039",
@@ -665,7 +740,8 @@
       "SC-002",
       "SC-005"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "waiting_for_dependencies",
+    "technical_support": "sojo"
   },
   {
     "id": "T040",
@@ -718,7 +794,10 @@
     "covers": [
       "FR-019"
     ],
-    "readiness": "waiting_for_dependencies"
+    "readiness": "register_merged_pending_final_assets",
+    "evidence": "https://github.com/AESRJ/LaunchControlGodot/pull/46",
+    "merged_commit": "e724953",
+    "note": "Registro publicado; revisión final tras aceptación de desenlaces y antes de exportación."
   },
   {
     "id": "T042",

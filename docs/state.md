@@ -1,6 +1,46 @@
 # Estado del proyecto
 
-Actualizado: 2026-11-14.
+## Corte vigente — 2026-11-15: T032 aceptada y cierre de integración
+
+Juego comprobado: `76e880f` (T031) y `976bc8c` (informe T032). Documentación de hackathon integrada en #45 `a8d4864`; no es una presentación gráfica, video ni envío al portal. T019 aceptada (#43); T025 cerrada por Gael (#47, seguimientos no bloqueantes); T030 integrada (#44); T031 integrada (#50); T032 validada por Isra (#51). La casilla de T032 se actualizó en el juego mediante #52. T035 aporta la API de revancha (#49); falta conectarla en main. T041 tiene registro (#46) con cierre de recursos finales pendiente.
+
+Codex verificó T031 sobre main combinado con T035: integración 100/100, harness 21/21 y GUI normal con ambos roles. Isra documentó Windows 100/0 y GUI sintética 4/4 para Q08–Q10. Esto no acredita dos equipos ni Internet.
+
+| Persona | Siguiente paso real |
+| --- | --- |
+| Jorge | Componer botón Otra ronda con la API T035, conservando desenlaces y salida; después T038 espera T037 |
+| Gael | Conexión de desenlaces propuesta en PR #53; ejecutar T037 tras la composición de revancha; T039 después de T038 |
+| Sojo | Backend T035 integrado; apoyar incidencias propias de sesión/revancha y después T039 con Gael |
+| Kevin | Registro T041 publicado; revisar recursos finales antes de exportar |
+| Isra | T032 aceptada; T042 espera T037/T040 y cierre de recursos |
+
+No se reasignan IDs ni se acepta QA ajena. El próximo encargo de Jorge/Claude es cerrar su composición de revancha para liberar la ejecución de T037 por Gael, no sustituir esa validación. Se conservan la comprobación humana, segundo equipo, Windows gráfico, redes externas y H-14 (ventanas menores de 1280×720) según su evidencia real. NotebookLM sigue pendiente; escribir este registro no acredita sincronización.
+
+## Historial anterior (sustituido donde difiera)
+
+Actualizado: 2026-11-15.
+
+
+## Estado vigente — T024 integrada (2026-11-15)
+
+Jorge autorizó revisar el flujo y fusionar si pasa. Codex detectó un fallo intermitente del runner gráfico y Claude corrigió únicamente el harness y su evidencia. PR #37 fusionada en main `d4cbdb36e091e483861f5f2e6b6763cec01786f6`, desde la cabecera revisada `49c3847`; el main combinado añade las escenas de Gael #29/#39. CI Linux/Windows: integración 46/46 y harness 21/21. Revisión independiente: mismo código de producción 46/46 y 21/21, runner de Kevin con ambos roles, y GUI final 20/20 procesos con ambas luces. Evidencia en `docs/qa/t024-integracion-puestos.md` del juego.
+
+Gael puede iniciar T025 (Q06–Q07 y medición real de FPS). Kevin repite y acepta T019 por separado; issue23 sigue abierto. Sojo mantiene T030 técnicamente liberada sobre T013/T026; T031 de Jorge espera su entrega, con T024/T027/T028/T029 integradas. T033/T034 tienen código integrado por Gael en #29/#39; #30 se cerró sin merge. Aún no están conectadas en main ni aceptadas en Q11–Q12/T037, y conservan sus dependencias. No se acreditan Windows GUI, F5 humano, dos PC ni Internet. Los estados siguientes son históricos cuando difieran.
+
+## Estado vigente — Sojo confirmado e inicio técnico de T030 (2026-11-15)
+
+Jorge comunicó la cuenta Sojito312 y coordinación comprobó escritura en ambos repositorios. Sojo reporta clones, Godot4.7.2 y pruebas21/21 y43/43; su prueba visual con dos instancias sigue pendiente. Su correo se configura localmente y no se publica en el registro. T030 puede comenzar con T013/T026 ya integradas, conservando la aceptación T019 pendiente de Kevin y sin cambiar el dueño Gael de T039 (apoyo Sojo). [Alcance de inicio](setup/t030-inicio-sojo.md).
+
+Juego main comprobado `5892dd0`: #32 (rediseño) y #33 (T028/T029) ya integrados. T024 está en PR #37, sin fusionar al registrar; no se evalúa ni integra su resultado en este cambio de coordinación. Los estados siguientes son históricos y quedan sustituidos donde difieran.
+
+
+## Actualización — relevo de Adrian por Sojo (2026-11-15)
+
+Por decisión de Jorge ([ADR-0005](decisions/0005-relevo-adrian-sojo.md)), Sojo se incorpora y asume las ocho tareas de Adrian (T007, T008, T009, T011, T013, T017, T030 y T035) y su apoyo en T039. Adrian queda `inactive` y conserva su autoría e historial; no se revocan permisos. Reparto: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8. La cuenta GitHub de Sojo quedó confirmada como Sojito312; ver la actualización vigente. Su primera tarea es T030. El juego está en main `11d649b` (CI 43/43 en Linux y Windows) con T020–T023, T026, T027 y T036 integradas. T019 sigue sin aceptar. Detalle: `specs/001-launch-control-godot/status.md`, guía `docs/setup/sojo.md`.
+
+## Actualización — corte de antena integrado (T012/T018)
+
+El juego queda en main `29fe8ca` (PR #22) con T003–T018 integradas: lobby, roles, ronda, reloj, antena, manual y resultado compartido en la escena principal. CI de main 43688574914: 36/36 en Linux y Windows. Antes se fusionaron #20 (corrección H-04/H-05 de Gael) y #21 (T012, con la adaptación autorizada de siete pruebas de Adrian por Jorge). **Siguiente: T019 de Kevin** (Q01–Q05 con ambos roles de host). Después se liberan T020 (Gael), T022 (Isra) y T026 (Kevin). No acreditado: F5 humano, Windows con interfaz gráfica, dos PC, LAN e Internet. Detalle en `specs/001-launch-control-godot/status.md` y `docs/sessions/2026-11-14-jorge-integracion-antena.md`.
 
 ## Actualización — T003 fusionada por petición de Jorge
 

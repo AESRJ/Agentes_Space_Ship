@@ -1,5 +1,7 @@
 # Auditoría de ramas y flujo — Launch Control (2026-11-14)
 
+> Informe histórico del 2026-11-14. Sus siguientes tareas y límites describen aquel corte; para el estado vigente consultar `docs/state.md` y `specs/001-launch-control-godot/status.md`. Se conserva la evidencia de autoría y pruebas, sin restaurar los estados antiguos del índice.
+
 Encargo explícito de Jorge: revisar todas las ramas de `AESRJ/LaunchControlGodot` y `AESRJ/Agentes_Space_Ship`, verificar especificación y flujo, y fusionar a main solo lo conforme y probado, en orden de dependencias. Auditor: Claude (Claude Code), actuando por Jorge. Las herramientas de auditoría (orquestador de pruebas, flujo multiproceso, integración verificada por blobs) son locales y no se versionan; sus resultados se resumen aquí, sin rutas personales ni direcciones de red.
 
 ## Juego — `AESRJ/LaunchControlGodot`

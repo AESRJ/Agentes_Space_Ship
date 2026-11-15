@@ -2,9 +2,9 @@
 
 ## Alcance vigente — encargo de Jorge (2026-11-14)
 
-Actualización: cinco integrantes activos; Sojo no está incorporado y sus tareas se redistribuyen conforme a ADR-0004. Juego en AESRJ/LaunchControlGodot. Se termina la base técnica para liberar el trabajo sin fingir pruebas personales o de gameplay.
+Actualización 2026-11-15: cinco integrantes activos (Jorge, Gael, Sojo, Kevin e Isra). Sojo releva a Adrian conforme a ADR-0005, sin borrar autoría previa. Juego en AESRJ/LaunchControlGodot. La base técnica publicada libera las tareas indicadas en status.md sin sustituir las pruebas personales o la aceptación de QA.
 
-Planificar Launch Control en Godot usando Spec Kit y asignar tareas a Gael, Adrian, Kevin, Isra, Jorge y Sojo. Se toman requisitos y referencias visuales de `Etapa_1_final.md` y sus tres imágenes; se excluye la metodología del documento. Se entregan especificación, investigación, diseño, contratos y 42 tareas (siete por persona). [Plan vigente](plan-godot.md).
+Planificar Launch Control en Godot usando Spec Kit y asignar tareas a Gael, Adrian, Kevin, Isra, Jorge y Sojo. Se toman requisitos y referencias visuales de `Etapa_1_final.md` y sus tres imágenes; se excluye la metodología del documento. Se entregan especificación, investigación, diseño, contratos y 42 tareas. Reparto vigente: Jorge 9, Gael 9, Sojo 8, Kevin 8 e Isra 8; el reparto inicial se conserva como historial. [Plan vigente](plan-godot.md).
 
 Dos roles y Godot están definidos para este prototipo; la referencia previa a Unity o a motor/roles aún abiertos es histórica. El primer corte incluye antena, manual, tiempo y desenlaces compartidos; la ampliación con segundo módulo/calculadora es propuesta. No se implementa el juego en el repositorio de agentes ni se crea un destino por inferencia; T001 identifica ese repositorio. No se asignan cuentas ni se publican issues sin identidades confirmadas.
 
