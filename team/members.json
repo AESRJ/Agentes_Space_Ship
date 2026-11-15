@@ -12,7 +12,7 @@
       "name": "Adrian",
       "github": "adrianbalderas373488",
       "status": "inactive",
-      "participation_note": "Relevado por Sojo por decisión de Jorge (2026-11-15, ADR-0004). Autor original de T007, T008, T009, T011, T013 y T017; conserva historial y cuenta. No se revocan permisos."
+      "participation_note": "Relevado por Sojo por decisión de Jorge (2026-11-15, ADR-0005). Autor original de T007, T008, T009, T011, T013 y T017; conserva historial y cuenta. No se revocan permisos."
     },
     {
       "id": "kevin",
@@ -37,7 +37,7 @@
       "name": "Sojo",
       "github": null,
       "status": "active",
-      "participation_note": "Incorporado por decisión de Jorge (2026-11-15, ADR-0004); asume T007, T008, T009, T011, T013, T017, T030 y T035. Cuenta GitHub pendiente de confirmar: sin invitación ni acceso declarado."
+      "participation_note": "Incorporado por decisión de Jorge (2026-11-15, ADR-0005); asume T007, T008, T009, T011, T013, T017, T030 y T035. Cuenta GitHub pendiente de confirmar: sin invitación ni acceso declarado."
     }
   ]
 }
